@@ -15,68 +15,74 @@
 </head>
 
 <body>
-  <!--Comienza header-->
-  <div class="header-bg">
-    <header>
-      <nav>
-        <a href="../index.html" id="maintitle">Esteban Maximiliano Posse</a>
-        <a href="mailto: estebanposse98@gmail.com" class="not-hoverable">
-          <img src="../assets/img/Available for work.gif" alt="freelance_gif" id="mail">
-        </a>
-        <div class="menu">
-          <ul id="menu">
-            <li><a href="video.html">VIDEO</a></li>
-            <li><a href="sound.html">SOUND</a></li>
-            <li><a href="aboutme.html">ABOUT ME</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-          </ul>
-        </div>
-      </nav>
-      <!--Termina header-->
-    </header>
-  </div>
   <!--video de fondo loopeado-->
   <video class="videobg" src="../assets/video/bg4_farm.mp4" autoplay muted loop></video>
-  <div class="content">
-    <div class="create" id="form-opener">LET'S CREATE SOMETHING TOGETHER!</div>
-    <!--formulario de contacto-->
-    <form class="formulario" action="index.html" method="post">
-      <div>
-        <input type="text" name="firstname" value="" placeholder="First Name" id="name">
-        <input type="text" name="lastname" value="" placeholder="Last Name" id="last-name">
+  <div class="wrapper-not-scroll">
+    <header>
+      <!--Comienza header-->
+      <div class="header-bg">
+        <header>
+          <nav>
+            <a href="../index.html" id="maintitle">Esteban Maximiliano Posse</a>
+            <a href="mailto: estebanposse98@gmail.com" class="not-hoverable">
+              <img src="../assets/img/Available for work.gif" alt="freelance_gif" id="mail">
+            </a>
+            <div class="menu">
+              <ul id="menu">
+                <li><a href="video.html">VIDEO</a></li>
+                <li><a href="sound.html">SOUND</a></li>
+                <li><a href="aboutme.html">ABOUT ME</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+              </ul>
+            </div>
+          </nav>
+          <!--Termina header-->
+        </header>
       </div>
-      <div>
-        <input type="text" name="email" value="" placeholder="E-mail">
-      </div>
-      <div>
-        <input type="text" name="subject" value="" placeholder="Subject">
-      </div>
-      <div class="custom-select">
-        <select class="services" name="services">
-          <option hidden id>Service requiered</option>
-          <option value="videography">Videography</option>
-          <option value="editing">Video Editing</option>
-          <option value="sound">Sound</option>
-          <option value="motiongraphics">Motion Graphics & Animation</option>
-          <option value="other">Other...</option>
-        </select>
-      </div>
-      <div>
-        <textarea name="message" rows="8" cols="80" placeholder="Message..."></textarea>
-      </div>
-      <div>
-        <input type="submit" name="Submit" value="Submit" class="button">
-        <input type="reset" name="Reset" class="button">
-      </div>
-    </form>
+    </header>
+    <div class="main-content">
+      <div class="create" id="form-opener">LET'S CREATE SOMETHING TOGETHER!</div>
+      <!--formulario de contacto-->
+      <form class="formulario" action="index.html" method="post">
+        <div>
+          <input type="text" name="firstname" value="" placeholder="First Name" id="name">
+          <input type="text" name="lastname" value="" placeholder="Last Name" id="last-name">
+        </div>
+        <div>
+          <input type="text" name="email" value="" placeholder="E-mail">
+        </div>
+        <div>
+          <input type="text" name="subject" value="" placeholder="Subject">
+        </div>
+        <div class="custom-select">
+          <select class="services" name="services">
+            <option hidden id>Service requiered</option>
+            <option value="videography">Videography</option>
+            <option value="editing">Video Editing</option>
+            <option value="sound">Sound</option>
+            <option value="motiongraphics">Motion Graphics & Animation</option>
+            <option value="other">Other...</option>
+          </select>
+        </div>
+        <div>
+          <textarea name="message" rows="8" cols="80" placeholder="Message..."></textarea>
+        </div>
+        <div>
+          <input type="submit" name="Submit" value="Submit" class="button">
+          <input type="reset" name="Reset" class="button">
+        </div>
+      </form>
+    </div>
+    <div class="footer">
+      <!--comienza footer-->
+      <footer class="footer-bg">
+        <ul>
+          <li><a href="https://www.instagram.com/esteban.posse98/" target="_blank"><i class="fa-brands fa-instagram fa-l fa-fw"></i></a></li>
+          <li><a href="https://twitter.com/sleepy_esteban" target="_blank"><i class="fa-brands fa-twitter fa-l fa-fw"></i></a></li>
+          <li><a href="https://www.facebook.com/esteban.posse.1/" target="_blank"><i class="fa-brands fa-facebook-f fa-l fa-fw"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/estebanposse98/" target="_blank"><i class="fa-brands fa-linkedin-in fa-l fa-fw"></i></a></li>
+        </ul>
+      </footer>
+    </div>
   </div>
-  <!--comienza footer-->
-  <footer class="footer-bg">
-    <ul>
-      <li><a href="https://www.instagram.com/esteban.posse98/" target="_blank"><i class="fa-brands fa-instagram fa-l fa-fw"></i></a></li>
-      <li><a href="https://twitter.com/sleepy_esteban" target="_blank"><i class="fa-brands fa-twitter fa-l fa-fw"></i></a></li>
-      <li><a href="https://www.facebook.com/esteban.posse.1/" target="_blank"><i class="fa-brands fa-facebook-f fa-l fa-fw"></i></a></li>
-      <li><a href="https://www.linkedin.com/in/estebanposse98/" target="_blank"><i class="fa-brands fa-linkedin-in fa-l fa-fw"></i></a></li>
-    </ul>
-  </footer>
 </body>
