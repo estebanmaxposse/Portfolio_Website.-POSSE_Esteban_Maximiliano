@@ -1,6 +1,9 @@
+* {
+  box-sizing: border-box
+}
+
 html {
   scroll-behavior: smooth;
-  height: 100%;
 }
 
 body {
@@ -8,12 +11,11 @@ body {
   margin: 0px;
   position: relative;
   min-height: 100vh;
-  min-width: fit-content;
+  min-width: 100%;
 }
 
 .wrapper-not-scroll {
-  position: relative;
-  min-width: 100vh;
+  min-width: 100vw;
   min-height: 100vh;
   display: grid;
   grid-gap: 0;
@@ -26,7 +28,7 @@ body {
 }
 
 .wrapper-scroll {
-  min-width: 100vh;
+  min-width: 100%;
   min-height: 100%;
   display: grid;
   grid-gap: 0;
@@ -153,7 +155,7 @@ footer ul {
 
 footer ul li {
   display: inline-block;
-  padding: 20px;
+  padding: 16px;
   margin: 0px;
 }
 
@@ -172,7 +174,6 @@ footer ul li a:hover {
 
 /* Video background */
 .videobg {
-  min-height: 100%;
   min-width: 100%;
   width: 100vw;
   height: 100vh;
@@ -230,7 +231,6 @@ footer ul li a:hover {
 }
 
 /* video */
-
 .video-wrapper {
   width: 100%;
   display: grid;
@@ -285,7 +285,7 @@ footer ul li a:hover {
   grid-area: video-content;
   display: grid;
   grid-template-rows: auto auto auto;
-  grid-template-areas: "shortfilms" "socialmedia" "animations";
+  grid-template-areas: "shortfilms""socialmedia""animations";
   justify-items: center;
 }
 
@@ -304,7 +304,7 @@ footer ul li a:hover {
   background-color: rgba(0, 0, 0, 0.5);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: minmax(0,auto) minmax(0,auto);
+  grid-template-rows: minmax(0, auto) minmax(0, auto);
   grid-gap: 4%;
   justify-items: center;
   width: 100%;
@@ -477,7 +477,6 @@ th, td {
 }
 
 /* slider */
-
 .slick-slide {
   margin: 0px 20px;
 }
@@ -559,7 +558,6 @@ th, td {
 }
 
 /* Media Queries */
-
 @media (max-width: 768px) {
   .slick-arrow {
     width: 1rem;
@@ -569,16 +567,21 @@ th, td {
 
 .row {
   overflow: hidden;
+  max-width: 100%
 }
 
-.about-table {
+.mobile-logos {
+  display: none;
+}
+
+.client-item {
   font-family: 'Titillium Web', sans-serif;
   color: white;
   font-size: 1em;
   text-align: center;
 }
 
-.about-table a:hover {
+.client-item a:hover {
   text-decoration: none;
 }
 
@@ -600,20 +603,39 @@ h2 {
   grid-area: reviews;
 }
 
-#reviews-table {
-  border-collapse: collapse;
+.reviews-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  font-family: 'Titillium Web', sans-serif;
+  color: white;
+  font-size: 1em;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+  width: 90%;
 }
 
-#reviews-table tr {
+.reviews-grid div {
+  margin: 16px;
+}
+
+.review1, .review2, .review3 {
+  display: flex;
+  align-items: center;
+}
+
+.review1, .review2 {
   border-bottom: 1px solid white;
 }
 
 .right-review {
   text-align: right;
+  width: 50%;
 }
 
 .left-review {
   text-align: left;
+  width: 50%;
 }
 
 .review-name {
@@ -630,7 +652,7 @@ h2 {
   font-family: 'Titillium Web', sans-serif;
   font-weight: bold;
   color: white;
-  font-size: 4vw;  
+  font-size: 4vw;
   width: 90%;
   margin: auto;
   text-align: center;
@@ -702,4 +724,370 @@ input::placeholder, select::placeholder, textarea::placeholder {
   background-color: white;
   color: black;
   font-weight: bold;
+}
+
+/* Media queries */
+/* mobile */
+@media (max-width: 576px) {
+  .wrapper-not-scroll {
+    grid-template-rows: auto auto auto;
+  }
+
+  .header {
+    align-self: start;
+  }
+
+  .mainpage {
+    flex-direction: column-reverse;
+  }
+
+  nav, #menu {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  #menu li {
+    padding: 0;
+  }
+
+  iframe {
+    width: 280px;
+    height: 157px;
+  }
+
+  #mail {
+    display: none;
+  }
+
+  .working {
+    font-size: 1em;
+  }
+
+  .role {
+    font-size: 2em;
+    margin: 0;
+  }
+
+  .role li {
+    text-align: center;
+  }
+
+  .role ul {
+    padding: 0;
+  }
+
+  footer ul li {
+    padding: 8px;
+  }
+
+  footer {
+    height: max-content;
+  }
+
+  footer ul {
+    padding: 16px;
+  }
+
+  .footer {
+    align-self: end;
+  }
+
+  #maintitle {
+    margin: 0;
+  }
+
+  .video-wrapper {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "sidebar""video-content"
+  }
+
+  .video-menu-container {
+    position: relative;
+    margin: auto;
+    align-self: center;
+    height: auto;
+  }
+
+  #video-menu {
+    writing-mode: horizontal-tb;
+    height: auto;
+    padding: 0;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  #video-menu li {
+    transform: rotate(0deg);
+  }
+
+  #shortfilms ul {
+    margin: 0;
+  }
+
+  #shortfilms ul li, #animations ul li {
+    margin: 16px;
+  }
+
+  #socialmedia {
+    grid-template-columns: auto;
+    grid-gap: 1%;
+    width: auto;
+    background-color: transparent;
+  }
+
+  #socialmedia iframe {
+    height: 512px;
+  }
+
+  .sound-grid {
+    width: 90%;
+    grid-template-columns: 90vw;
+    grid-template-rows: auto;
+    grid-gap: 8px;
+    height: auto;
+  }
+
+  .sound-grid iframe {
+    width: 280px;
+    height: 157px;
+  }
+
+  .sound-item {
+    overflow: scroll;
+    height: auto;
+  }
+
+  audio {
+    width: inherit;
+  }
+
+  .item1 {
+    grid-area: auto;
+    align-self: center;
+  }
+
+  .item2 {
+    grid-area: auto;
+  }
+
+  .item3 {
+    grid-area: auto;
+  }
+
+  .item4 {
+    grid-area: auto;
+  }
+
+  .item5 {
+    grid-area: auto;
+  }
+
+  .story {
+    padding: 16px;
+    grid-template-columns: 90vw;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "greetings""paragraph1""photo1""paragraph2";
+    grid-gap: 8px;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .greetings h1 {
+    font-size: 4vh;
+  }
+
+  h2 {
+    padding: 16px;
+  }
+
+  .story p {
+    text-align: center;
+    margin: auto;
+  }
+
+  .row {
+    display: none;
+  }
+
+  .mobile-logos {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    object-fit: scale-down;
+    max-width: 90vw;
+    margin: auto;
+    grid-gap: 1px;
+    align-items: center;
+  }
+
+  .client-item {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+  }
+
+  .mobile-logos img {
+    height: 100%;
+    width: 90%;
+    min-height: 90px;
+    max-height: 100px;
+    object-fit: contain;
+    margin: 16px;
+  }
+
+  #mrb-logo {
+    border-top: none;
+  }
+
+  #fanes-logo {
+    border-bottom: none;
+  }
+
+  .reviews-grid div {
+    margin: 8px;
+  }
+
+  .review1, .review2, .review3 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .review2 {
+    flex-direction: column-reverse;
+  }
+
+  .right-review {
+    width: 100%;
+  }
+
+  .left-review {
+    width: 100%;
+  }
+
+  .create {
+    font-size: 4vh;
+  }
+
+  .button {
+    width: auto;
+  }
+}
+
+/* tablets */
+@media (min-device-width : 577px) and (max-device-width : 1023px) {
+  .wrapper-not-scroll {
+    grid-template-rows: auto;
+  }
+
+  .header {
+    align-self: start;
+  }
+
+  .footer {
+    align-self: baseline;
+  }
+
+  .mainpage {
+    flex-direction: column-reverse;
+    margin: 16px;
+  }
+
+  #menu {
+    padding: 0;
+  }
+
+  .role {
+    font-size: 4em;
+    margin: 0;
+  }
+
+  .role li {
+    text-align: center;
+  }
+
+  .role ul {
+    padding: 0;
+    margin: 16px;
+  }
+
+  iframe {
+    width: 560px;
+    height: 315px;
+  }
+
+  #socialmedia {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1%;
+    width: auto;
+  }
+
+  #socialmedia iframe {
+    width: 288px;
+    height: 512px;
+  }
+
+  .sound-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 2fr 1fr;
+    grid-template-areas: 'main-sound main-sound' 'foley1 foley2' 'audio1 audio2';
+    place-items: center;
+    position: relative;
+    overflow: scroll;
+    height: auto;
+  }
+
+  .item1 {
+    grid-area: main-sound;
+    align-self: center;
+    height: 100%;
+  }
+
+  .item1 iframe {
+    height: 90%;
+  }
+
+  .item2 {
+    grid-area: foley1;
+  }
+
+  .item3 {
+    grid-area: foley2;
+  }
+
+  .item4 {
+    grid-area: audio1;
+  }
+
+  .item5 {
+    grid-area: audio2;
+  }
+
+  .story {
+    padding: 16px;
+    grid-template-columns: repeat(4, 1fr) 3fr;
+    grid-template-rows: 1fr 1fr 2fr;
+    grid-template-areas:
+      'greetings greetings . . photo1'
+      'paragraph1 paragraph1 paragraph1 paragraph1 photo1'
+      'paragraph2 paragraph2 paragraph2 paragraph2 photo1';
+    grid-gap: 1px;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .photo1 {
+    width: 80%;
+  }
+
+  .paragraph2 {
+    text-align: left;
+  }
+
+  .reviews-grid img {
+    width: inherit;
+  }
+
+  .button {
+    width: auto;
+  }
 }
