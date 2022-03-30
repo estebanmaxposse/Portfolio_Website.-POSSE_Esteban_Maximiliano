@@ -50,9 +50,10 @@ body {
   grid-area: footer;
 }
 
-a {
+a, .menu ul .nav-item .nav-link {
   text-decoration: none;
   color: white;
+  padding: 0;
 }
 
 a:hover {
@@ -104,11 +105,23 @@ nav a:not(.not-hoverable):hover:after, .create a:hover:after {
   transform-origin: bottom left;
 }
 
+.navbar-toggler-icon {
+  color: white;
+  padding-top: 4px;
+  text-align: right;
+  outline: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
 #maintitle {
   font-family: 'Titillium Web', sans-serif;
   color: white;
   font-weight: bold;
   margin-left: 16px;
+  font-size: 1rem;
 }
 
 #mail {
@@ -116,6 +129,7 @@ nav a:not(.not-hoverable):hover:after, .create a:hover:after {
   margin: auto;
   border: 1px solid white;
   border-radius: 50px;
+  align-self: center;
 }
 
 #mail:hover {
@@ -123,6 +137,10 @@ nav a:not(.not-hoverable):hover:after, .create a:hover:after {
   transition: 0.5s;
   -webkit-transition: 0.5s;
   outline: none;
+}
+
+.menu {
+  flex-grow: 0;
 }
 
 #menu {
@@ -187,22 +205,6 @@ footer ul li a:hover {
   opacity: 0.5;
 }
 
-.opaque {
-  opacity: 1;
-}
-
-.videobg-mask {
-  min-width: 100%;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: -1;
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1));
-}
-
 /* index */
 .mainpage-container {
   display: flex;
@@ -217,10 +219,13 @@ footer ul li a:hover {
 
 .role {
   font-family: 'Alegreya Sans SC', sans-serif;
-  font-weight: bold;
   font-size: 4em;
   color: white;
   margin-left: auto;
+}
+
+.display-2 {
+  font-weight: 600;
 }
 
 .role li {
@@ -235,18 +240,37 @@ footer ul li a:hover {
   animation-delay: 1s;
 }
 
+#working-on-card {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.nav-tabs .nav-link {
+  color: black;
+}
+
+.card-header {
+  background-color: white;
+}
+
+#working-tabs {
+  padding-top: 0;
+}
+
+#card-title-box {
+  margin: 0;
+}
+
 .working {
   font-family: 'Alegreya Sans SC', sans-serif;
   font-weight: bold;
   color: black;
-  font-size: 1.5em;
+  font-size: 1em;
   text-align: center;
 }
 
 .working p {
-  margin: 4px;
-  z-index: 1;
-  margin-top: 0;
+  font-size: 1.5em;
 }
 
 .working-box {
@@ -279,6 +303,7 @@ footer ul li a:hover {
   writing-mode: vertical-rl;
   display: flex;
   height: 80%;
+  flex-direction: row;
 }
 
 #video-menu a:after {
@@ -302,6 +327,10 @@ footer ul li a:hover {
 #video-menu li {
   transform: rotate(180deg);
   padding: 2%;
+}
+
+.video-menu-item {
+  padding: 0
 }
 
 .video-content {
@@ -769,6 +798,7 @@ input::placeholder, select::placeholder, textarea::placeholder {
   nav, #menu {
     flex-direction: column;
     padding: 0;
+    align-items: flex-end;
   }
 
   #menu li {
