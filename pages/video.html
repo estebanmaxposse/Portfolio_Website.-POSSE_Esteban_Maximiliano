@@ -19,6 +19,11 @@
 </head>
 
 <body>
+  <script type="text/javascript">
+    var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+      target: '#video-menu'
+    })
+  </script>
   <!--video de fondo loopeado-->
   <video class="videobg" src="../assets/video/bg3_sunset.mp4" autoplay muted loop></video>
   <div class="wrapper-scroll">
@@ -59,7 +64,7 @@
           </ul>
         </div>
         <!--sección shortfilms-->
-        <div class="video-content">
+        <div class="video-content" data-bs-spy="scroll" data-bs-target="#video-menu" data-bs-offset="0" class="scrollspy-example" tabindex="0">
           <section id="shortfilms">
             <ul>
               <li><iframe width="1280" height="720" src="https://www.youtube.com/embed/qI3seah1gJE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
