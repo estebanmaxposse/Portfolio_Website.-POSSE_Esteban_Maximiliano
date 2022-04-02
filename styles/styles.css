@@ -542,11 +542,13 @@ audio {
   grid-area: photo1;
   object-fit: contain;
   width: 75%;
+  border: 3px solid white;
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, .5);
 }
 
 .photo1 img {
-  border: 3px solid white;
-  border-radius: 3px;
+
   object-fit: cover;
   width: 90%;
   height: 100%;
