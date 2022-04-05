@@ -1,1 +1,111 @@
-main
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+.header-bg {
+  background-color: rgba(0, 0, 0, 0.5); }
+
+header {
+  width: 100%; }
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 1; }
+  nav a {
+    position: relative; }
+    nav a:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: white;
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-out; }
+    nav a:not(.not-hoverable):hover:after {
+      transform: scaleX(1);
+      transform-origin: bottom left; }
+
+.navbar {
+  padding: 0; }
+
+.navbar-toggler-icon {
+  color: white;
+  padding-top: 4px;
+  text-align: right;
+  outline: none; }
+
+.navbar-toggler:focus {
+  box-shadow: none; }
+
+#maintitle {
+  font-family: "Titillium Web", sans-serif;
+  color: white;
+  font-weight: bold;
+  margin-left: 16px;
+  font-size: 1rem; }
+
+#mail {
+  width: 240px;
+  border: 1px solid white;
+  border-radius: 50px;
+  align-self: center; }
+  #mail:hover {
+    border-color: #00ff00;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    outline: none; }
+
+.menu {
+  flex-grow: 0; }
+  .menu ul .nav-item .nav-link {
+    text-decoration: none;
+    color: white;
+    padding: 0; }
+
+#menu {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: bold;
+  margin: 0;
+  display: flex; }
+  #menu li {
+    padding: 20px;
+    text-align: center;
+    margin: 0; }
+
+body {
+  background-color: black;
+  margin: 0;
+  position: relative;
+  min-height: 100vh;
+  min-width: 100%; }
+
+.wrapper-scroll {
+  min-width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-gap: 0;
+  grid-template-areas: "header" "content" "footer"; }
+
+.header {
+  grid-area: header; }
+
+.main-content {
+  grid-area: content;
+  align-self: center; }
+
+.footer {
+  grid-area: footer; }
+
+a {
+  text-decoration: none;
+  color: white;
+  padding: 0; }
+  a:hover {
+    text-decoration: none;
+    color: white; }
+
+li {
+  list-style-type: none; }
