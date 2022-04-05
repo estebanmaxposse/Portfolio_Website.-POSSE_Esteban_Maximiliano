@@ -75,6 +75,91 @@ nav {
     text-align: center;
     margin: 0; }
 
+.footer-bg {
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.footer {
+  align-self: end; }
+
+footer {
+  width: 100%;
+  height: 58.4px; }
+  footer ul {
+    margin: 0; }
+    footer ul li {
+      display: inline-block;
+      padding: 16px;
+      margin: 0; }
+      footer ul li a {
+        padding: 8px; }
+        footer ul li a:hover {
+          background-color: white;
+          border-radius: 8px;
+          color: #444;
+          transition: 0.5s;
+          -webkit-transition: 0.5s;
+          outline: none; }
+
+.mainpage-container {
+  display: flex;
+  justify-content: center; }
+
+.mainpage {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center; }
+
+.role {
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-size: 4rem;
+  color: white;
+  margin-left: auto; }
+  .role li {
+    text-align: right; }
+
+.display-2 {
+  font-weight: 600;
+  font-size: 3rem; }
+
+#MOTION-DESIGNER {
+  animation-delay: 0.5s; }
+
+#SOUND-DESIGNER {
+  animation-delay: 1s; }
+
+#working-on-card {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+.nav-tabs .nav-link {
+  color: black; }
+
+.card-header {
+  background-color: white; }
+
+#working-tabs {
+  padding-top: 0; }
+
+#card-title-box {
+  margin: 0; }
+
+.work-video iframe {
+  width: 560px;
+  height: 315px; }
+
+.working {
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-weight: bold;
+  color: black;
+  font-size: 1rem;
+  text-align: center; }
+  .working p {
+    font-size: 1.4em; }
+
+.working-box {
+  background-color: white;
+  padding: 10px; }
+
 body {
   background-color: black;
   margin: 0;
@@ -109,3 +194,17 @@ a {
 
 li {
   list-style-type: none; }
+
+/* Video background */
+.videobg {
+  min-width: 100%;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -2;
+  opacity: 0.5; }
