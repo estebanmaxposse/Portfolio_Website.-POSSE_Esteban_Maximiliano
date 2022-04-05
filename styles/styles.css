@@ -1,30 +1,9 @@
-* {
-  box-sizing: border-box
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   background-color: black;
   margin: 0px;
   position: relative;
   min-height: 100vh;
   min-width: 100%;
-}
-
-.wrapper-not-scroll {
-  min-width: 100vw;
-  min-height: 100vh;
-  display: grid;
-  grid-gap: 0;
-  grid-template-rows: auto 83.9vh auto;
-  grid-template-areas:
-    "header"
-    "content"
-    "footer";
-  align-items: center;
 }
 
 .wrapper-scroll {
@@ -44,6 +23,7 @@ body {
 
 .main-content {
   grid-area: content;
+  align-self: center;
 }
 
 .footer {
@@ -75,7 +55,6 @@ header {
 }
 
 nav {
-  margin: auto;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -171,7 +150,7 @@ nav a:not(.not-hoverable):hover:after, .create a:hover:after {
 
 footer {
   width: 100%;
-  height: 3.65em;
+  height: 58.4px;
 }
 
 footer ul {
@@ -227,13 +206,14 @@ footer ul li a:hover {
 
 .role {
   font-family: 'Alegreya Sans SC', sans-serif;
-  font-size: 4em;
+  font-size: 1rem;
   color: white;
   margin-left: auto;
 }
 
 .display-2 {
   font-weight: 600;
+  font-size: 3rem;
 }
 
 .role li {
@@ -267,6 +247,11 @@ footer ul li a:hover {
 
 #card-title-box {
   margin: 0;
+}
+
+.work-video iframe {
+  width: 560px;
+  height: 315px;
 }
 
 .working {
@@ -523,7 +508,7 @@ audio {
 .greetings h1 {
   margin: 0;
   text-align: center;
-  font-size: 4vw;
+  font-size: 4rem;
   font-weight: bold;
 }
 
@@ -841,6 +826,7 @@ select {
 
   .mainpage {
     flex-direction: column-reverse;
+    margin: 16px;
   }
 
   .navbar {
@@ -862,7 +848,7 @@ select {
     padding-bottom: 8px;
   }
 
-  iframe {
+  .work-video iframe, iframe {
     width: 280px;
     height: 157px;
   }
@@ -875,8 +861,8 @@ select {
     font-size: 1em;
   }
 
-  .role {
-    font-size: 2em;
+  .role, .display-2 {
+    font-size: 2rem;
     margin: 0;
   }
 
@@ -1007,7 +993,7 @@ select {
   }
 
   .greetings h1 {
-    font-size: 4vh;
+    font-size: 2rem;
   }
 
   h2 {
@@ -1132,7 +1118,7 @@ select {
     margin: 16px;
   }
 
-  iframe {
+  .work-video iframe, iframe {
     width: 560px;
     height: 315px;
   }
@@ -1197,6 +1183,10 @@ select {
     align-items: center;
   }
 
+  .greetings h1 {
+    font-size: 3rem;
+  }
+
   .photo1 {
     width: 80%;
   }
@@ -1220,6 +1210,11 @@ select {
 
 /* laptop */
 @media (min-device-width : 1024px) and (max-device-width : 1439px) {
+  .work-video iframe {
+    width: 496px;
+    height: 279px;
+  }
+
   iframe {
     width: 864px;
     height: 486px;

@@ -1,0 +1,79 @@
+.mainpage-container {
+  display: flex;
+  justify-content: center;
+}
+
+.mainpage {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.role {
+  font-family: $font-main;
+  font-size: $font-xl;
+  color: $secondary-color;
+  margin-left: auto;
+  li {
+    text-align: right;
+  }
+}
+
+.display-2 {
+  font-weight: 600;
+  font-size: $font-lg;
+}
+
+#MOTION-DESIGNER {
+  animation-delay: 0.5s;
+}
+
+#SOUND-DESIGNER {
+  animation-delay: 1s;
+}
+
+#working-on-card {
+  margin-top: $sp-0;
+  margin-bottom: $sp-0;
+}
+
+.nav-tabs {
+	.nav-link {
+		color: $key-color;
+	}
+}
+
+.card-header {
+  background-color: $secondary-color;
+}
+
+#working-tabs {
+  padding-top: $sp-0;
+}
+
+#card-title-box {
+  margin: $sp-0;
+}
+
+.work-video {
+  iframe {
+    width: 560px;
+    height: 315px;
+  }
+}
+
+.working {
+  font-family: $font-main;
+  font-weight: bold;
+  color: $key-color;
+  font-size: $font-sm;
+  text-align: center;
+  p {
+    font-size: 1.4em;
+  }
+}
+
+.working-box {
+  background-color: $secondary-color;
+  padding: 10px;
+}
