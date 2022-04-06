@@ -1,0 +1,254 @@
+@media (max-width: 576px) {
+
+  .header {
+    align-self: start;
+  }
+
+  .mainpage {
+    flex-direction: column-reverse;
+    margin: $sp-lg;
+  }
+
+  .navbar {
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+
+  nav, #menu {
+    flex-direction: column;
+    padding: $sp-0;
+    align-items: flex-end;
+  }
+
+  #menu {
+  	li {
+  		padding: 0.3rem;
+      &:last-child {
+  			padding-bottom: $sp-md;
+  		}
+  	}
+  }
+
+  iframe {
+    width: 280px;
+    height: 157px;
+  }
+
+  .work-video {
+  	iframe {
+  		width: 240px;
+  		height: 135px;
+  	}
+  }
+
+  #mail {
+    display: none;
+  }
+
+  .working {
+    font-size: 1em;
+  }
+
+  .role, .display-2 {
+    font-size: $font-md;
+    margin: $sp-0;
+  }
+
+  .role {
+    ul {
+      padding: $sp-0;
+      li {
+        text-align: center;
+      }
+    }
+  }
+
+  .footer {
+    align-self: end;
+    footer {
+      height: max-content;
+      ul {
+        padding: $sp-lg;
+        li {
+          padding: $sp-md;
+        }
+      }
+    }
+  }
+
+  #aboutme-navbar {
+    padding-right: var(--bs-gutter-x,.75rem);
+    padding-left: var(--bs-gutter-x,.75rem);
+  }
+
+  .video-wrapper {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "sidebar""video-content"
+  }
+
+  .video-menu-container {
+    position: relative;
+    margin: auto;
+    align-self: center;
+    height: auto;
+  }
+
+  #video-menu {
+    writing-mode: horizontal-tb;
+    height: auto;
+    padding: $sp-0;
+    flex-direction: column;
+    margin-bottom: $sp-0;
+    li {
+      transform: rotate(0deg);
+    }
+    a {
+      &:after {
+        top: 22px;
+
+      }
+    }
+  }
+
+  #shortfilms {
+    ul {
+      margin: $sp-0;
+      li {
+        margin: $sp-lg;
+      }
+    }
+  }
+
+  #animations {
+  	ul {
+  		li {
+  			margin: $sp-lg;
+  		}
+  	}
+  }
+
+  #socialmedia {
+    grid-template-columns: auto;
+    grid-gap: 1%;
+    width: auto;
+    background-color: transparent;
+    iframe {
+      height: 512px;
+    }
+  }
+
+  .sound-grid {
+    width: $w-90;
+    grid-template-columns: 90vw;
+    grid-template-rows: auto;
+    grid-gap: $sp-md;
+    height: auto;
+    iframe {
+      width: $w-100;
+      height: 157px;
+    }
+  }
+
+  .sound-item {
+    height: auto;
+    grid-area: auto;
+  }
+
+  .sound-item.left {
+    align-self: center;
+  }
+
+  .story {
+    padding: $sp-lg;
+    grid-template-columns: 90vw;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "greetings""paragraph1""photo1""paragraph2";
+    grid-gap: $sp-md;
+    justify-items: center;
+    align-items: center;
+    p {
+      text-align: center;
+      margin: auto;
+    }
+  }
+
+  .greetings {
+  	h1 {
+  		font-size: $font-md;
+  	}
+  }
+
+  h2 {
+    padding: $sp-lg;
+  }
+
+  .row {
+    display: none;
+  }
+
+  .mobile-logos {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: $w-100;
+    object-fit: scale-down;
+    max-width: 90vw;
+    margin: auto;
+    grid-gap: 1px;
+    align-items: center;
+    img {
+      height: $w-100;
+      width: $w-90;
+      min-height: 90px;
+      max-height: 100px;
+      object-fit: contain;
+      margin: $sp-lg;
+    }
+  }
+
+  .client-item {
+    border-top: 1px solid $secondary-color;
+    border-bottom: 1px solid $secondary-color;
+  }
+
+  #mrb-logo {
+    border-top: none;
+  }
+
+  #fanes-logo {
+    border-bottom: none;
+  }
+
+  .reviews-grid div {
+    margin: $sp-md;
+  }
+
+  .review1, .review2, .review3 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .review2 {
+    flex-direction: column-reverse;
+  }
+
+  .right-review {
+    width: $w-100;
+  }
+
+  .left-review {
+    width: $w-100;
+  }
+
+  .create {
+    font-size: $font-md;
+  }
+
+  .button {
+    width: auto;
+  }
+
+  #form-opener {
+    padding: $sp-md;
+  }
+}

@@ -1,0 +1,21 @@
+@media (min-device-width : 1024px) and (max-device-width : 1439px) {
+  .work-video {
+  	iframe {
+  		width: 496px;
+  		height: 279px;
+  	}
+  }
+
+  iframe {
+    width: 864px;
+    height: 486px;
+  }
+
+  #socialmedia {
+  	background-color: transparent;
+  	iframe {
+  		width: 207px;
+  		height: 368px;
+  	}
+  }
+}
