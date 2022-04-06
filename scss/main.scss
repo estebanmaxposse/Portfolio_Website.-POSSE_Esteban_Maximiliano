@@ -4,13 +4,16 @@
 @import "_header";
 @import "_footer";
 @import "views/_index";
+@import "media-queries/_mobile";
+@import "media-queries/_tablet";
+@import "media-queries/_laptop";
 
 body {
   background-color: $key-color;
   margin: $sp-0;
   position: relative;
   min-height: 100vh;
-  min-width: 100%;
+  min-width: $w-100;
 }
 
 .wrapper-scroll {
