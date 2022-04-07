@@ -1,0 +1,72 @@
+.sound-grid {
+  margin: auto;
+  width: $w-90;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+  place-items: center;
+  position: relative;
+  overflow: hidden;
+  height: 83vh;
+  gap: $sp-sm;
+  iframe {
+    height: 90%;
+    width: $w-100;
+  }
+}
+
+.sound-item {
+  background-color: $secondary-color;
+  padding: 1px;
+  width: $w-100;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+audio {
+  width: -webkit-fill-available;
+}
+
+.sound-title, .sound-subtitle {
+  font-family: $font-secondary;
+  color: $key-color;
+  text-transform: uppercase;
+  margin: $sp-sm;
+  margin-left: $sp-sm;
+}
+
+.sound-title {
+  font-weight: bold;
+}
+
+.waveform {
+  width: 99%;
+  height: 60%;
+  margin: auto;
+}
+
+.sound-item.left {
+	grid-area: 1 / 1 / 3 / 3;
+	align-self: center;
+	height: 100%;
+	iframe {
+		height: 90%;
+	}
+}
+
+.sound-item.mid-top {
+  grid-area: 1 / 3 / 1 / 5;
+}
+
+.sound-item.mid-bottom {
+  grid-area: 2 / 3 / 2 / 5;
+}
+
+.sound-item.right-top {
+  grid-area: 1 / 5 / 1 / 6;
+}
+
+.sound-item.right-bottom {
+  grid-area: 2 / 5 / 2 / 6;
+}
