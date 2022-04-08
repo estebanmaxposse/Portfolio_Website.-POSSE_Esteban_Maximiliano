@@ -100,6 +100,7 @@
     padding: $sp-0;
     flex-direction: column;
     margin-bottom: $sp-0;
+    margin-top: $sp-lg;
     li {
       transform: rotate(0deg);
     }
@@ -109,6 +110,10 @@
 
       }
     }
+  }
+
+  .video-content {
+    padding-top: $sp-0;
   }
 
   #shortfilms {
@@ -151,12 +156,29 @@
   }
 
   .sound-item {
+    overflow: scroll;
     height: auto;
-    grid-area: auto;
   }
 
   .sound-item.left {
+    grid-area: auto;
     align-self: center;
+  }
+
+  .sound-item.mid-top {
+    grid-area: auto;
+  }
+
+  .sound-item.mid-bottom {
+    grid-area: auto;
+  }
+
+  .sound-item.right-top {
+    grid-area: auto;
+  }
+
+  .sound-item.right-bottom {
+    grid-area: auto;
   }
 
   .story {
@@ -246,6 +268,11 @@
 
   .button {
     width: auto;
+  }
+
+  form {
+    margin: auto;
+    width: $w-90;
   }
 
   #form-opener {

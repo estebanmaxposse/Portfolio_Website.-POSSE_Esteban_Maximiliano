@@ -47,6 +47,12 @@
   	height: 315px;
   }
 
+  #video-menu {
+    li {
+      padding: $sp-sm;
+    }
+  }
+
   #socialmedia {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1%;

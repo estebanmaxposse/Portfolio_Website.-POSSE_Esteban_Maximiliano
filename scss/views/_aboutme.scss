@@ -1,0 +1,264 @@
+.about-me-content {
+  display: grid;
+  grid-template-areas:
+    "story"
+    "clients"
+    "reviews"
+    "call-to-action";
+}
+
+.story {
+  font-family: $font-secondary;
+  color: $secondary-color;
+  padding: 30px;
+  grid-area: story;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) 3fr;
+  grid-template-rows: 1fr 1fr 2fr;
+  grid-template-areas:
+    "greetings greetings . . photo1 "
+    ". paragraph1 paragraph1 . photo1 "
+    ". . paragraph2 paragraph2 photo1 ";
+  grid-gap: $sp-lg;
+  justify-items: center;
+  align-items: center;
+}
+
+.greetings {
+  grid-area: greetings;
+  h1 {
+    margin: $sp-0;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+  }
+}
+
+.paragraph1 {
+  grid-area: paragraph1;
+  text-align: left;
+}
+
+.paragraph2 {
+  grid-area: paragraph2;
+  text-align: right;
+}
+
+.photo1 {
+  grid-area: photo1;
+  object-fit: contain;
+  width: $w-75;
+  border: 3px solid $secondary-color;
+  border-radius: 3px;
+  background-color: $main-color;
+  img {
+    object-fit: cover;
+    width: $w-90;
+    height: 100%;
+  }
+}
+
+.clients {
+  grid-area: clients;
+}
+
+/* slider */
+@mixin grayscale_element($value) {
+    -webkit-filter: #{"grayscale(#{$value})"};
+    -moz-filter: #{"grayscale(#{$value})"};
+    filter:#{"grayscale(#{$value})"};
+}
+
+.slick-slide {
+  margin: 0px 20px;
+}
+
+.logo-carousel {
+  overflow: inherit;
+  border: none;
+  font-family: $font-secondary;
+  color: $secondary-color;
+  font-size: 1em;
+  text-align: center;
+}
+
+.slick-slide {
+	img {
+		width: $w-100;
+		min-height: 90px;
+		max-height: 100px;
+		object-fit: scale-down;
+		@include grayscale_element(100%);
+		transition: transform 0.3s ease-in-out, filter .5s ease-in-out;
+		&:hover {
+			filter: none;
+			transform: scale(1.1, 1.1);
+		}
+	}
+}
+
+.slick-track {
+	&::before {
+		display: table;
+		content: '';
+	}
+	&::after {
+		display: table;
+		content: '';
+		clear: both;
+	}
+	padding: 1rem 0;
+}
+.slick-loading {
+	.slick-track {
+		visibility: hidden;
+	}
+	.slick-slide {
+		visibility: hidden;
+	}
+}
+.slick-slide.slick-loading {
+	img {
+		display: none;
+	}
+}
+.slick-slide.dragging {
+	img {
+		pointer-events: none;
+	}
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  background: url(https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/arrow.svg?sanitize=true) center no-repeat;
+  color: $secondary-color;
+  filter: invert(77%) sepia(32%) saturate(1%) hue-rotate(344deg) brightness(105%) contrast(103%);
+  border: none;
+  width: 2rem;
+  height: 1.5rem;
+  text-indent: -10000px;
+  margin-top: -16px;
+  z-index: 99;
+}
+
+.slick-arrow.slick-next {
+  right: -40px;
+  transform: rotate(180deg);
+}
+
+.slick-arrow.slick-prev {
+  left: -40px;
+}
+
+@media (max-width: 768px) {
+  .slick-arrow {
+    width: 1rem;
+    height: 1rem;
+  }
+}
+
+.row {
+  overflow: hidden;
+  max-width: $w-100;
+}
+/* end-slider */
+
+/* logos for mobile */
+.mobile-logos {
+  display: none;
+}
+
+.client-item {
+  font-family: $font-secondary;
+  color: $secondary-color;
+  font-size: 1em;
+  text-align: center;
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.client-logo {
+  margin: auto;
+}
+/* end logos for mobile */
+
+h2 {
+  font-family: $font-secondary;
+  font-weight: bold;
+  color: $secondary-color;
+  font-size: 2em;
+  padding: 1.5em;
+  padding-left: 3em;
+  padding-bottom: .5em;
+}
+
+.reviews {
+  grid-area: reviews;
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  font-family: 'Titillium Web', sans-serif;
+  color: $secondary-color;
+  font-size: 1em;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+  width: $w-90;
+  div {
+    margin: $sp-lg;
+  }
+}
+
+.review1, .review2, .review3 {
+  display: flex;
+  align-items: center;
+}
+
+.review1, .review2 {
+  border-bottom: 1px solid $secondary-color;
+}
+
+.right-review {
+  text-align: right;
+  width: $w-50;
+}
+
+.left-review {
+  text-align: left;
+  width: $w-50;
+}
+
+.review-name {
+  text-align: right;
+  font-style: italic;
+  margin: $sp-0;
+}
+
+.call-to-action {
+  grid-area: call-to-action;
+}
+
+.create {
+  font-family: $font-secondary;
+  font-weight: bold;
+  color: $secondary-color;
+  font-size: 4vw;
+  width: $w-90;
+  margin: auto;
+  text-align: center;
+  padding: 1em;
+  font-style: italic;
+  a {
+    position: relative;
+    display: inline-block;
+    &:after {
+      height: $sp-md;
+    }
+  }
+}

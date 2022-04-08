@@ -160,6 +160,437 @@ footer {
   background-color: white;
   padding: 10px; }
 
+.video-wrapper {
+  width: 100%;
+  display: grid;
+  grid-gap: 0;
+  grid-template-columns: 5% 1fr 5%;
+  grid-template-areas: "sidebar video-content ."; }
+
+.video-menu-container {
+  height: 10%;
+  margin-top: -2%;
+  grid-area: sidebar;
+  top: 0;
+  position: sticky;
+  align-self: start; }
+
+#video-menu {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: bold;
+  writing-mode: vertical-rl;
+  display: flex;
+  height: 80%;
+  flex-direction: row;
+  position: relative; }
+  #video-menu a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    top: -4px;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out; }
+  #video-menu a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left; }
+  #video-menu li {
+    transform: rotate(180deg);
+    padding: 12px; }
+
+.video-menu-item {
+  padding: 0;
+  background: none;
+  border: none;
+  color: white; }
+
+.list-group-item-action:focus {
+  z-index: 1;
+  color: white;
+  text-decoration: none;
+  background-color: transparent; }
+
+.list-group-item-action:hover {
+  z-index: 1;
+  color: white;
+  text-decoration: none;
+  background-color: transparent; }
+
+.list-group-item.active {
+  z-index: 2;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-color: rgba(0, 0, 0, 0.5);
+  border-radius: 4px; }
+
+.video-content {
+  padding-top: 16px;
+  width: 100%;
+  grid-area: video-content;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "shortfilms" "socialmedia" "animations";
+  justify-items: center; }
+
+#shortfilms {
+  grid-area: shortfilms; }
+  #shortfilms ul {
+    width: 90%;
+    padding: 0;
+    margin-bottom: 0; }
+
+#socialmedia {
+  grid-area: socialmedia;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: minmax(0, auto) minmax(0, auto);
+  grid-gap: 4%;
+  justify-items: center;
+  width: 100%; }
+  #socialmedia iframe {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 5%; }
+
+#animations {
+  grid-area: animations;
+  padding-top: 16px; }
+  #animations ul {
+    width: 90%;
+    padding: 0; }
+
+.sound-grid {
+  margin: auto;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+  place-items: center;
+  position: relative;
+  overflow: hidden;
+  height: 83vh;
+  gap: 4px; }
+  .sound-grid iframe {
+    height: 90%;
+    width: 100%; }
+
+.sound-item {
+  background-color: white;
+  padding: 1px;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column; }
+
+audio {
+  width: -webkit-fill-available; }
+
+.sound-title, .sound-subtitle {
+  font-family: "Titillium Web", sans-serif;
+  color: black;
+  text-transform: uppercase;
+  margin: 4px;
+  margin-left: 4px; }
+
+.sound-title {
+  font-weight: bold; }
+
+.waveform {
+  width: 99%;
+  height: 60%;
+  margin: auto; }
+
+.sound-item.left {
+  grid-area: 1 / 1 / 3 / 3;
+  align-self: center;
+  height: 100%; }
+  .sound-item.left iframe {
+    height: 90%; }
+
+.sound-item.mid-top {
+  grid-area: 1 / 3 / 1 / 5; }
+
+.sound-item.mid-bottom {
+  grid-area: 2 / 3 / 2 / 5; }
+
+.sound-item.right-top {
+  grid-area: 1 / 5 / 1 / 6; }
+
+.sound-item.right-bottom {
+  grid-area: 2 / 5 / 2 / 6; }
+
+.about-me-content {
+  display: grid;
+  grid-template-areas: "story" "clients" "reviews" "call-to-action"; }
+
+.story {
+  font-family: "Titillium Web", sans-serif;
+  color: white;
+  padding: 30px;
+  grid-area: story;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) 3fr;
+  grid-template-rows: 1fr 1fr 2fr;
+  grid-template-areas: "greetings greetings . . photo1 " ". paragraph1 paragraph1 . photo1 " ". . paragraph2 paragraph2 photo1 ";
+  grid-gap: 16px;
+  justify-items: center;
+  align-items: center; }
+
+.greetings {
+  grid-area: greetings; }
+  .greetings h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold; }
+
+.paragraph1 {
+  grid-area: paragraph1;
+  text-align: left; }
+
+.paragraph2 {
+  grid-area: paragraph2;
+  text-align: right; }
+
+.photo1 {
+  grid-area: photo1;
+  object-fit: contain;
+  width: 75%;
+  border: 3px solid white;
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.5); }
+  .photo1 img {
+    object-fit: cover;
+    width: 90%;
+    height: 100%; }
+
+.clients {
+  grid-area: clients; }
+
+/* slider */
+.slick-slide {
+  margin: 0px 20px; }
+
+.logo-carousel {
+  overflow: inherit;
+  border: none;
+  font-family: "Titillium Web", sans-serif;
+  color: white;
+  font-size: 1em;
+  text-align: center; }
+
+.slick-slide img {
+  width: 100%;
+  min-height: 90px;
+  max-height: 100px;
+  object-fit: scale-down;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: transform 0.3s ease-in-out, filter .5s ease-in-out; }
+  .slick-slide img:hover {
+    filter: none;
+    transform: scale(1.1, 1.1); }
+
+.slick-track {
+  padding: 1rem 0; }
+  .slick-track::before {
+    display: table;
+    content: ''; }
+  .slick-track::after {
+    display: table;
+    content: '';
+    clear: both; }
+
+.slick-loading .slick-track {
+  visibility: hidden; }
+
+.slick-loading .slick-slide {
+  visibility: hidden; }
+
+.slick-slide.slick-loading img {
+  display: none; }
+
+.slick-slide.dragging img {
+  pointer-events: none; }
+
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  background: url(https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/arrow.svg?sanitize=true) center no-repeat;
+  color: white;
+  filter: invert(77%) sepia(32%) saturate(1%) hue-rotate(344deg) brightness(105%) contrast(103%);
+  border: none;
+  width: 2rem;
+  height: 1.5rem;
+  text-indent: -10000px;
+  margin-top: -16px;
+  z-index: 99; }
+
+.slick-arrow.slick-next {
+  right: -40px;
+  transform: rotate(180deg); }
+
+.slick-arrow.slick-prev {
+  left: -40px; }
+
+@media (max-width: 768px) {
+  .slick-arrow {
+    width: 1rem;
+    height: 1rem; } }
+
+.row {
+  overflow: hidden;
+  max-width: 100%; }
+
+/* end-slider */
+/* logos for mobile */
+.mobile-logos {
+  display: none; }
+
+.client-item {
+  font-family: "Titillium Web", sans-serif;
+  color: white;
+  font-size: 1em;
+  text-align: center; }
+  .client-item a:hover {
+    text-decoration: none; }
+
+.client-logo {
+  margin: auto; }
+
+/* end logos for mobile */
+h2 {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: bold;
+  color: white;
+  font-size: 2em;
+  padding: 1.5em;
+  padding-left: 3em;
+  padding-bottom: .5em; }
+
+.reviews {
+  grid-area: reviews; }
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  font-family: 'Titillium Web', sans-serif;
+  color: white;
+  font-size: 1em;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+  width: 90%; }
+  .reviews-grid div {
+    margin: 16px; }
+
+.review1, .review2, .review3 {
+  display: flex;
+  align-items: center; }
+
+.review1, .review2 {
+  border-bottom: 1px solid white; }
+
+.right-review {
+  text-align: right;
+  width: 50%; }
+
+.left-review {
+  text-align: left;
+  width: 50%; }
+
+.review-name {
+  text-align: right;
+  font-style: italic;
+  margin: 0; }
+
+.call-to-action {
+  grid-area: call-to-action; }
+
+.create {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: bold;
+  color: white;
+  font-size: 4vw;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  padding: 1em;
+  font-style: italic; }
+  .create a {
+    position: relative;
+    display: inline-block; }
+    .create a:after {
+      height: 8px; }
+
+#form-opener {
+  padding: 0; }
+
+form {
+  margin: auto;
+  width: 60%;
+  text-align: center; }
+
+.form-spaces {
+  background-color: black;
+  color: gray; }
+  .form-spaces:focus {
+    background-color: white;
+    border: 2px solid black;
+    transition: 0.5s;
+    -webkit-transition: 0.3s;
+    outline: none;
+    box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.25);
+    color: black; }
+
+input, select, textarea {
+  margin: 0.5%;
+  background-color: black;
+  color: white;
+  padding: .5em;
+  width: 100%;
+  border: 1px solid gray;
+  border-radius: 2px;
+  font-family: "Titillium Web", sans-serif;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+label {
+  color: gray;
+  font-family: "Titillium Web", sans-serif;
+  text-transform: uppercase;
+  font-style: italic; }
+
+select {
+  text-transform: uppercase;
+  width: 100%;
+  min-width: 100%;
+  font-style: italic;
+  height: 58px; }
+
+.form-select {
+  padding: 0.5em; }
+
+#message {
+  height: 10%; }
+
+.button {
+  width: auto;
+  cursor: pointer;
+  transition: .2s ease-in-out;
+  text-transform: uppercase; }
+  .button:hover {
+    background-color: white;
+    color: black;
+    font-weight: bold; }
+
 @media (max-width: 576px) {
   .header {
     align-self: start; }
@@ -219,11 +650,14 @@ footer {
     height: auto;
     padding: 0;
     flex-direction: column;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    margin-top: 16px; }
     #video-menu li {
       transform: rotate(0deg); }
     #video-menu a:after {
       top: 22px; }
+  .video-content {
+    padding-top: 0; }
   #shortfilms ul {
     margin: 0; }
     #shortfilms ul li {
@@ -247,10 +681,19 @@ footer {
       width: 100%;
       height: 157px; }
   .sound-item {
-    height: auto;
-    grid-area: auto; }
+    overflow: scroll;
+    height: auto; }
   .sound-item.left {
+    grid-area: auto;
     align-self: center; }
+  .sound-item.mid-top {
+    grid-area: auto; }
+  .sound-item.mid-bottom {
+    grid-area: auto; }
+  .sound-item.right-top {
+    grid-area: auto; }
+  .sound-item.right-bottom {
+    grid-area: auto; }
   .story {
     padding: 16px;
     grid-template-columns: 90vw;
@@ -306,6 +749,9 @@ footer {
     font-size: 2rem; }
   .button {
     width: auto; }
+  form {
+    margin: auto;
+    width: 90%; }
   #form-opener {
     padding: 8px; } }
 
@@ -336,6 +782,8 @@ footer {
   iframe {
     width: 560px;
     height: 315px; }
+  #video-menu li {
+    padding: 4px; }
   #socialmedia {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1%;
