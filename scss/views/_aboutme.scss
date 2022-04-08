@@ -204,16 +204,15 @@ h2 {
   display: grid;
   grid-template-columns: 1fr;
   font-family: 'Titillium Web', sans-serif;
-  color: white;
+  color: $secondary-color;
   font-size: 1em;
   text-align: center;
   align-items: center;
   margin: auto;
-  width: 90%;
-}
-
-.reviews-grid div {
-  margin: 16px;
+  width: $w-90;
+  div {
+    margin: $sp-lg;
+  }
 }
 
 .review1, .review2, .review3 {
@@ -222,23 +221,23 @@ h2 {
 }
 
 .review1, .review2 {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid $secondary-color;
 }
 
 .right-review {
   text-align: right;
-  width: 50%;
+  width: $w-50;
 }
 
 .left-review {
   text-align: left;
-  width: 50%;
+  width: $w-50;
 }
 
 .review-name {
   text-align: right;
   font-style: italic;
-  margin: 0;
+  margin: $sp-0;
 }
 
 .call-to-action {
@@ -246,22 +245,20 @@ h2 {
 }
 
 .create {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: $font-secondary;
   font-weight: bold;
-  color: white;
+  color: $secondary-color;
   font-size: 4vw;
-  width: 90%;
+  width: $w-90;
   margin: auto;
   text-align: center;
   padding: 1em;
   font-style: italic;
-}
-
-.create a {
-  position: relative;
-  display: inline-block;
-}
-
-.create a:after {
-  height: 8px;
+  a {
+    position: relative;
+    display: inline-block;
+    &:after {
+      height: $sp-md;
+    }
+  }
 }

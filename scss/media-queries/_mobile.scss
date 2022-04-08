@@ -270,6 +270,11 @@
     width: auto;
   }
 
+  form {
+    margin: auto;
+    width: $w-90;
+  }
+
   #form-opener {
     padding: $sp-md;
   }
