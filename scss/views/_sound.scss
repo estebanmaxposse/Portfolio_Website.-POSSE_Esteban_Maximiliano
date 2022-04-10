@@ -28,7 +28,7 @@ audio {
   width: -webkit-fill-available;
 }
 
-.sound-title, .sound-subtitle {
+.sound-subtitle {
   font-family: $font-secondary;
   color: $key-color;
   text-transform: uppercase;
@@ -37,6 +37,7 @@ audio {
 }
 
 .sound-title {
+  @extend .sound-subtitle;
   font-weight: bold;
 }
 

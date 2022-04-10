@@ -290,7 +290,7 @@ footer {
 audio {
   width: -webkit-fill-available; }
 
-.sound-title, .sound-subtitle {
+.sound-subtitle, .sound-title {
   font-family: "Titillium Web", sans-serif;
   color: black;
   text-transform: uppercase;
