@@ -17,3 +17,8 @@ $sp-sm: 4px;
 $sp-0: 0;
 
 //mixins
+@mixin text($font-typo, $font-size, $font-weight) {
+  font-family: $font-typo;
+  font-size: $font-size;
+  font-weight: $font-weight;
+}

@@ -10,8 +10,7 @@
 }
 
 .role {
-  font-family: $font-main;
-  font-size: $font-xl;
+  @include text($font-main, $font-xl, normal)
   color: $secondary-color;
   margin-left: auto;
   li {
@@ -63,10 +62,8 @@
 }
 
 .working {
-  font-family: $font-main;
-  font-weight: bold;
+  @include text($font-main, $font-sm, bold)
   color: $key-color;
-  font-size: $font-sm;
   text-align: center;
   p {
     font-size: 1.4em;

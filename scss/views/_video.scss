@@ -17,8 +17,7 @@
 }
 
 #video-menu {
-	font-family: $font-secondary;
-	font-weight: bold;
+  @include text($font-secondary, $font-sm, bold)
 	writing-mode: vertical-rl;
 	display: flex;
 	height: 80%;

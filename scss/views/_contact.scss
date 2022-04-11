@@ -23,6 +23,7 @@ form {
 }
 
 input, select, textarea {
+  @include text($font-secondary, $font-sm, normal)
   margin: 0.5%;
   background-color: $key-color;
   color: $secondary-color;
@@ -30,15 +31,14 @@ input, select, textarea {
   width: 100%;
   border: 1px solid gray;
   border-radius: 2px;
-  font-family: $font-secondary;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 label {
+  @include text($font-secondary, $font-sm, normal)
   color: gray;
-  font-family: $font-secondary;
   text-transform: uppercase;
   font-style: italic;
 }

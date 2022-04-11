@@ -8,7 +8,7 @@
 }
 
 .story {
-  font-family: $font-secondary;
+  @include text($font-secondary, $font-sm, normal)
   color: $secondary-color;
   padding: 30px;
   grid-area: story;
@@ -27,10 +27,9 @@
 .greetings {
   grid-area: greetings;
   h1 {
+    @include text($font-secondary, $font-xl, bold)
     margin: $sp-0;
     text-align: center;
-    font-size: 4rem;
-    font-weight: bold;
   }
 }
 
@@ -64,9 +63,9 @@
 
 /* slider */
 @mixin grayscale_element($value) {
-    -webkit-filter: #{"grayscale(#{$value})"};
-    -moz-filter: #{"grayscale(#{$value})"};
-    filter:#{"grayscale(#{$value})"};
+  -webkit-filter: #{"grayscale(#{$value})"};
+  -moz-filter: #{"grayscale(#{$value})"};
+  filter:#{"grayscale(#{$value})"};
 }
 
 .slick-slide {
@@ -74,11 +73,10 @@
 }
 
 .logo-carousel {
+  @include text($font-secondary, $font-sm, normal)
   overflow: inherit;
   border: none;
-  font-family: $font-secondary;
   color: $secondary-color;
-  font-size: 1em;
   text-align: center;
 }
 
@@ -173,9 +171,8 @@
 }
 
 .client-item {
-  font-family: $font-secondary;
+  @include text($font-secondary, $font-sm, normal)
   color: $secondary-color;
-  font-size: 1em;
   text-align: center;
   a {
     &:hover {
@@ -190,10 +187,8 @@
 /* end logos for mobile */
 
 h2 {
-  font-family: $font-secondary;
-  font-weight: bold;
+  @include text($font-secondary, $font-md, bold)
   color: $secondary-color;
-  font-size: 2em;
   padding: 1.5em;
   padding-left: 3em;
   padding-bottom: .5em;
@@ -204,11 +199,10 @@ h2 {
 }
 
 .reviews-grid {
+  @include text($font-secondary, $font-sm, normal)
   display: grid;
   grid-template-columns: 1fr;
-  font-family: 'Titillium Web', sans-serif;
   color: $secondary-color;
-  font-size: 1em;
   text-align: center;
   align-items: center;
   margin: auto;
@@ -248,10 +242,8 @@ h2 {
 }
 
 .create {
-  font-family: $font-secondary;
-  font-weight: bold;
+  @include text($font-secondary, $font-xl, bold)
   color: $secondary-color;
-  font-size: 4vw;
   width: $w-90;
   margin: auto;
   text-align: center;

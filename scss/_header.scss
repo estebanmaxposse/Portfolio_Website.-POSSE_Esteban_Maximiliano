@@ -55,11 +55,9 @@ nav {
 }
 
 #maintitle {
-  font-family: $font-secondary;
+  @include text($font-secondary, $font-sm, bold)
   color: $secondary-color;
-  font-weight: bold;
   margin-left: $sp-lg;
-  font-size: $font-sm;
 }
 
 #mail {
@@ -89,8 +87,7 @@ nav {
 }
 
 #menu {
-  font-family: $font-secondary;
-  font-weight: bold;
+  @include text($font-secondary, $font-sm, bold)
   margin: $sp-0;
   display: flex;
   li {
