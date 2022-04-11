@@ -32,7 +32,7 @@
 			height: 2px;
 			top: -4px;
 			left: $sp-0;
-			background-color: $secondary-color;
+			background-color: clr(secondary);
 			transform-origin: bottom right;
 			transition: transform 0.25s ease-out;
 		}
@@ -53,19 +53,19 @@
   padding: $sp-0;
   background: none;
   border: none;
-  color: $secondary-color;
+  color: clr(secondary);
 }
 
 .list-group-item-action {
 	&:focus {
 		z-index: 1;
-		color: $secondary-color;
+		color: clr(secondary);
 		text-decoration: none;
 		background-color: transparent;
 	}
 	&:hover {
 		z-index: 1;
-		color: $secondary-color;
+		color: clr(secondary);
 		text-decoration: none;
 		background-color: transparent;
 	}
@@ -73,9 +73,9 @@
 
 .list-group-item.active {
   z-index: 2;
-  color: $secondary-color;
-  background-color: $main-color;
-  border-color: $main-color;
+  color: clr(secondary);
+  background-color: clr(main);
+  border-color: clr(main);
   border-radius: $sp-sm;
 }
 
@@ -101,7 +101,7 @@
 #socialmedia {
   grid-area: socialmedia;
   padding: $sp-0;
-  background-color: $main-color;
+  background-color: clr(main);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: minmax(0, auto) minmax(0, auto);

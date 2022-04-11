@@ -9,7 +9,7 @@
 
 .story {
   @include text($font-secondary, $font-sm, normal)
-  color: $secondary-color;
+  color: clr(secondary);
   padding: 30px;
   grid-area: story;
   display: grid;
@@ -47,8 +47,8 @@
   grid-area: photo1;
   object-fit: contain;
   width: $w-75;
-  @include border (3px, $secondary-color, 3px);
-  background-color: $main-color;
+  @include border (3px, clr(secondary), 3px);
+  background-color: clr(main);
   img {
     object-fit: cover;
     width: $w-90;
@@ -75,7 +75,7 @@
   @include text($font-secondary, $font-sm, normal)
   overflow: inherit;
   border: none;
-  color: $secondary-color;
+  color: clr(secondary);
   text-align: center;
 }
 
@@ -132,7 +132,7 @@
   position: absolute;
   top: 50%;
   background: url(https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/arrow.svg?sanitize=true) center no-repeat;
-  color: $secondary-color;
+  color: clr(secondary);
   filter: invert(77%) sepia(32%) saturate(1%) hue-rotate(344deg) brightness(105%) contrast(103%);
   border: none;
   width: 2rem;
@@ -171,7 +171,7 @@
 
 .client-item {
   @include text($font-secondary, $font-sm, normal)
-  color: $secondary-color;
+  color: clr(secondary);
   text-align: center;
   a {
     &:hover {
@@ -187,7 +187,7 @@
 
 h2 {
   @include text($font-secondary, $font-md, bold)
-  color: $secondary-color;
+  color: clr(secondary);
   padding: 1.5em;
   padding-left: 3em;
   padding-bottom: .5em;
@@ -201,7 +201,7 @@ h2 {
   @include text($font-secondary, $font-sm, normal)
   display: grid;
   grid-template-columns: 1fr;
-  color: $secondary-color;
+  color: clr(secondary);
   text-align: center;
   align-items: center;
   margin: auto;
@@ -216,7 +216,7 @@ h2 {
 }
 
 .review1, .review2 {
-  border-bottom: 1px solid $secondary-color;
+  border-bottom: 1px solid clr(secondary);
 }
 
 .right-review {
@@ -241,7 +241,7 @@ h2 {
 
 .create {
   @include text($font-secondary, $font-xl, bold)
-  color: $secondary-color;
+  color: clr(secondary);
   width: $w-90;
   margin: auto;
   text-align: center;

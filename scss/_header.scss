@@ -1,5 +1,5 @@
 .header-bg {
-  background-color: $main-color;
+  background-color: clr(main);
 }
 
 header {
@@ -22,7 +22,7 @@ nav {
       height: 2px;
       bottom: $sp-0;
       left: $sp-0;
-      background-color: $secondary-color;
+      background-color: clr(secondary);
       transform-origin: bottom right;
       transition: transform 0.25s ease-out;
     }
@@ -42,7 +42,7 @@ nav {
 }
 
 .navbar-toggler-icon {
-  color: $secondary-color;
+  color: clr(secondary);
   padding-top: $sp-sm;
   text-align: right;
   outline: none;
@@ -56,16 +56,16 @@ nav {
 
 #maintitle {
   @include text($font-secondary, $font-sm, bold)
-  color: $secondary-color;
+  color: clr(secondary);
   margin-left: $sp-lg;
 }
 
 #mail {
   width: 240px;
-  @include border (1px, $secondary-color, 50px);
+  @include border (1px, clr(secondary), 50px);
   align-self: center;
   &:hover {
-    border-color: #00ff00;
+    border-color: clr(green);
     transition: 0.5s;
     -webkit-transition: 0.5s;
     outline: none;
@@ -78,7 +78,7 @@ nav {
 		.nav-item {
 			.nav-link {
 				text-decoration: none;
-				color: $secondary-color;
+				color: clr(secondary);
 				padding: $sp-0;
 			}
 		}

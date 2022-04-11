@@ -340,7 +340,7 @@ footer ul li a:hover {
 .list-group-item.active {
   z-index: 2;
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: clr(main);
   border-color: rgba(0, 0, 0, 0.5);
   border-radius: 4px;
 }
@@ -368,7 +368,7 @@ footer ul li a:hover {
 #socialmedia {
   grid-area: socialmedia;
   padding: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: clr(main);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: minmax(0, auto) minmax(0, auto);

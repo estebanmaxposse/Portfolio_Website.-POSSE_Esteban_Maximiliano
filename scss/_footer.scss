@@ -1,5 +1,5 @@
 .footer-bg {
-  background-color: $main-color;
+  background-color: clr(main);
 }
 
 .footer {
@@ -18,7 +18,7 @@ footer {
       a {
         padding: $sp-md;
         &:hover {
-          background-color: $secondary-color;
+          background-color: clr(secondary);
           border-radius: $sp-md;
           color: #444;
           transition: 0.5s;

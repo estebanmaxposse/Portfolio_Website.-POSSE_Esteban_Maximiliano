@@ -1,7 +1,16 @@
 //global colors
-$main-color: rgba(0, 0, 0, .5);
-$secondary-color: white;
-$key-color: black;
+$colors: (
+  main: rgba(0, 0, 0, .5),
+  secondary: white,
+  key: black,
+  green: #00ff00,
+  gray: gray
+);
+
+@function clr($base) {
+  $color: map-get($colors, $base);
+  @return $color;
+}
 
 //sizing
 $w-100: 100%;

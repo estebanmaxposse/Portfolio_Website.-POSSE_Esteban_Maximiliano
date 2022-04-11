@@ -15,7 +15,7 @@
 }
 
 .sound-item {
-  background-color: $secondary-color;
+  background-color: clr(secondary);
   padding: 1px;
   width: $w-100;
   height: 100%;
@@ -30,7 +30,7 @@ audio {
 
 .sound-subtitle {
   @include text($font-secondary, $font-sm, normal)
-  color: $key-color;
+  color: clr(key);
   text-transform: uppercase;
   margin: $sp-sm;
   margin-left: $sp-sm;

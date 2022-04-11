@@ -13,7 +13,7 @@
 @import "media-queries/_laptop";
 
 body {
-  background-color: $key-color;
+  background-color: clr(key);
   margin: $sp-0;
   position: relative;
   min-height: 100vh;

@@ -9,25 +9,25 @@ form {
 }
 
 .form-spaces {
-  background-color: $key-color;
-  color: gray;
+  background-color: clr(key);
+  color: clr(gray);
   &:focus {
-    background-color: $secondary-color;
+    background-color: clr(secondary);
     border: 2px solid black;
     transition: 0.5s;
     -webkit-transition: 0.3s;
     outline: none;
     box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.25);
-    color: $key-color;
+    color: clr(key);
   }
 }
 
 input, select, textarea {
   @include text($font-secondary, $font-sm, normal)
-  @include border (1px, gray, 2px);
+  @include border (1px, clr(gray), 2px);
   margin: 0.5%;
-  background-color: $key-color;
-  color: $secondary-color;
+  background-color: clr(key);
+  color: clr(secondary);
   padding: .5em;
   width: 100%;
   -moz-box-sizing: border-box;
@@ -37,7 +37,7 @@ input, select, textarea {
 
 label {
   @include text($font-secondary, $font-sm, normal)
-  color: gray;
+  color: clr(gray);
   text-transform: uppercase;
   font-style: italic;
 }
@@ -64,8 +64,8 @@ select {
   transition: .2s ease-in-out;
   text-transform: uppercase;
   &:hover {
-    background-color: $secondary-color;
-    color: $key-color;
+    background-color: clr(secondary);
+    color: clr(key);
     font-weight: bold;
   }
 }
