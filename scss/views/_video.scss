@@ -19,7 +19,7 @@
 #video-menu {
   @include text($font-secondary, $font-sm, bold)
 	writing-mode: vertical-rl;
-	display: flex;
+  @include flex-center;
 	height: 80%;
 	flex-direction: row;
 	position: relative;

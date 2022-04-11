@@ -213,8 +213,7 @@ h2 {
 }
 
 .review1, .review2, .review3 {
-  display: flex;
-  align-items: center;
+  @include flex-center;
 }
 
 .review1, .review2 {

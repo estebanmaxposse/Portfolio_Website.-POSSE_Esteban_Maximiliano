@@ -1,12 +1,10 @@
 .mainpage-container {
-  display: flex;
-  justify-content: center;
+  @include flex-center;
 }
 
 .mainpage {
-  display: flex;
+  @include flex-center;
   flex-direction: row-reverse;
-  align-items: center;
 }
 
 .role {

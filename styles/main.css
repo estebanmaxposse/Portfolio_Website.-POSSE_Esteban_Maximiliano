@@ -103,12 +103,14 @@ footer {
 
 .mainpage-container {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  align-items: center; }
 
 .mainpage {
   display: flex;
-  flex-direction: row-reverse;
-  align-items: center; }
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse; }
 
 .role {
   font-family: "Alegreya Sans SC", sans-serif;
@@ -183,6 +185,8 @@ footer {
   font-weight: bold;
   writing-mode: vertical-rl;
   display: flex;
+  justify-content: center;
+  align-items: center;
   height: 80%;
   flex-direction: row;
   position: relative; }
@@ -500,6 +504,7 @@ h2 {
 
 .review1, .review2, .review3 {
   display: flex;
+  justify-content: center;
   align-items: center; }
 
 .review1, .review2 {
@@ -750,6 +755,8 @@ select {
     margin: 8px; }
   .review1, .review2, .review3 {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column; }
   .review2 {
     flex-direction: column-reverse; }
