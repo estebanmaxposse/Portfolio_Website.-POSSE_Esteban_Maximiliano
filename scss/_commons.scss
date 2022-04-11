@@ -28,3 +28,8 @@ $sp-0: 0;
   justify-content: center;
   align-items: center;
 }
+
+@mixin border ($border-size, $border-color, $border-radius) {
+  border: $border-size solid $border-color;
+  border-radius: $border-radius;
+}

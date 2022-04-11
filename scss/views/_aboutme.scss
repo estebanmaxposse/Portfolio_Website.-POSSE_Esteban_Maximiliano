@@ -47,8 +47,7 @@
   grid-area: photo1;
   object-fit: contain;
   width: $w-75;
-  border: 3px solid $secondary-color;
-  border-radius: 3px;
+  @include border (3px, $secondary-color, 3px);
   background-color: $main-color;
   img {
     object-fit: cover;

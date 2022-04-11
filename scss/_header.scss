@@ -62,8 +62,7 @@ nav {
 
 #mail {
   width: 240px;
-  border: 1px solid $secondary-color;
-  border-radius: 50px;
+  @include border (1px, $secondary-color, 50px);
   align-self: center;
   &:hover {
     border-color: #00ff00;

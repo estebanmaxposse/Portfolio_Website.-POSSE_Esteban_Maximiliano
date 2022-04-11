@@ -566,13 +566,13 @@ input, select, textarea {
   font-family: "Titillium Web", sans-serif;
   font-size: 1rem;
   font-weight: normal;
+  border: 1px solid gray;
+  border-radius: 2px;
   margin: 0.5%;
   background-color: black;
   color: white;
   padding: .5em;
   width: 100%;
-  border: 1px solid gray;
-  border-radius: 2px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
