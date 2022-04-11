@@ -397,20 +397,17 @@ audio {
     filter: none;
     transform: scale(1.1, 1.1); }
 
-.slick-track {
+.slick-track, .slick-loading .slick-slide {
   padding: 1rem 0; }
-  .slick-track::before {
+  .slick-track::before, .slick-loading .slick-slide::before {
     display: table;
     content: ''; }
-  .slick-track::after {
+  .slick-track::after, .slick-loading .slick-slide::after {
     display: table;
     content: '';
     clear: both; }
 
-.slick-loading .slick-track {
-  visibility: hidden; }
-
-.slick-loading .slick-slide {
+.slick-loading .slick-track, .slick-loading .slick-slide {
   visibility: hidden; }
 
 .slick-slide.slick-loading img {

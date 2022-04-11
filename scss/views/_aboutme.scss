@@ -109,19 +109,22 @@
 	}
 	padding: 1rem 0;
 }
+
 .slick-loading {
 	.slick-track {
 		visibility: hidden;
 	}
 	.slick-slide {
-		visibility: hidden;
+		@extend .slick-track;
 	}
 }
+
 .slick-slide.slick-loading {
 	img {
 		display: none;
 	}
 }
+
 .slick-slide.dragging {
 	img {
 		pointer-events: none;
