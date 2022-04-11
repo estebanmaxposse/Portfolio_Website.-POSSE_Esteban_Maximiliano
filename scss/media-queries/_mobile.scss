@@ -229,8 +229,8 @@
   }
 
   .client-item {
-    border-top: 1px solid $secondary-color;
-    border-bottom: 1px solid $secondary-color;
+    border-top: 1px solid clr(secondary);
+    border-bottom: 1px solid clr(secondary);
   }
 
   #mrb-logo {
@@ -246,7 +246,7 @@
   }
 
   .review1, .review2, .review3 {
-    display: flex;
+    @include flex-center;
     flex-direction: column;
   }
 

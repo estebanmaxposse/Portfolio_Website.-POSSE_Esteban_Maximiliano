@@ -1,7 +1,16 @@
 //global colors
-$main-color: rgba(0, 0, 0, .5);
-$secondary-color: white;
-$key-color: black;
+$colors: (
+  main: rgba(0, 0, 0, .5),
+  secondary: white,
+  key: black,
+  green: #00ff00,
+  gray: gray
+);
+
+@function clr($base) {
+  $color: map-get($colors, $base);
+  @return $color;
+}
 
 //sizing
 $w-100: 100%;
@@ -15,3 +24,21 @@ $sp-lg: 16px;
 $sp-md: 8px;
 $sp-sm: 4px;
 $sp-0: 0;
+
+//mixins
+@mixin text($font-typo, $font-size, $font-weight) {
+  font-family: $font-typo;
+  font-size: $font-size;
+  font-weight: $font-weight;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin border ($border-size, $border-color, $border-radius) {
+  border: $border-size solid $border-color;
+  border-radius: $border-radius;
+}

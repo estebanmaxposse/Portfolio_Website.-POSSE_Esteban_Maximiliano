@@ -8,8 +8,8 @@
 }
 
 .story {
-  font-family: $font-secondary;
-  color: $secondary-color;
+  @include text($font-secondary, $font-sm, normal)
+  color: clr(secondary);
   padding: 30px;
   grid-area: story;
   display: grid;
@@ -27,10 +27,9 @@
 .greetings {
   grid-area: greetings;
   h1 {
+    @include text($font-secondary, $font-xl, bold)
     margin: $sp-0;
     text-align: center;
-    font-size: 4rem;
-    font-weight: bold;
   }
 }
 
@@ -48,9 +47,8 @@
   grid-area: photo1;
   object-fit: contain;
   width: $w-75;
-  border: 3px solid $secondary-color;
-  border-radius: 3px;
-  background-color: $main-color;
+  @include border (3px, clr(secondary), 3px);
+  background-color: clr(main);
   img {
     object-fit: cover;
     width: $w-90;
@@ -64,9 +62,9 @@
 
 /* slider */
 @mixin grayscale_element($value) {
-    -webkit-filter: #{"grayscale(#{$value})"};
-    -moz-filter: #{"grayscale(#{$value})"};
-    filter:#{"grayscale(#{$value})"};
+  -webkit-filter: #{"grayscale(#{$value})"};
+  -moz-filter: #{"grayscale(#{$value})"};
+  filter:#{"grayscale(#{$value})"};
 }
 
 .slick-slide {
@@ -74,11 +72,10 @@
 }
 
 .logo-carousel {
+  @include text($font-secondary, $font-sm, normal)
   overflow: inherit;
   border: none;
-  font-family: $font-secondary;
-  color: $secondary-color;
-  font-size: 1em;
+  color: clr(secondary);
   text-align: center;
 }
 
@@ -109,19 +106,22 @@
 	}
 	padding: 1rem 0;
 }
+
 .slick-loading {
 	.slick-track {
 		visibility: hidden;
 	}
 	.slick-slide {
-		visibility: hidden;
+		@extend .slick-track;
 	}
 }
+
 .slick-slide.slick-loading {
 	img {
 		display: none;
 	}
 }
+
 .slick-slide.dragging {
 	img {
 		pointer-events: none;
@@ -132,7 +132,7 @@
   position: absolute;
   top: 50%;
   background: url(https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/arrow.svg?sanitize=true) center no-repeat;
-  color: $secondary-color;
+  color: clr(secondary);
   filter: invert(77%) sepia(32%) saturate(1%) hue-rotate(344deg) brightness(105%) contrast(103%);
   border: none;
   width: 2rem;
@@ -170,9 +170,8 @@
 }
 
 .client-item {
-  font-family: $font-secondary;
-  color: $secondary-color;
-  font-size: 1em;
+  @include text($font-secondary, $font-sm, normal)
+  color: clr(secondary);
   text-align: center;
   a {
     &:hover {
@@ -187,10 +186,8 @@
 /* end logos for mobile */
 
 h2 {
-  font-family: $font-secondary;
-  font-weight: bold;
-  color: $secondary-color;
-  font-size: 2em;
+  @include text($font-secondary, $font-md, bold)
+  color: clr(secondary);
   padding: 1.5em;
   padding-left: 3em;
   padding-bottom: .5em;
@@ -201,11 +198,10 @@ h2 {
 }
 
 .reviews-grid {
+  @include text($font-secondary, $font-sm, normal)
   display: grid;
   grid-template-columns: 1fr;
-  font-family: 'Titillium Web', sans-serif;
-  color: $secondary-color;
-  font-size: 1em;
+  color: clr(secondary);
   text-align: center;
   align-items: center;
   margin: auto;
@@ -216,12 +212,11 @@ h2 {
 }
 
 .review1, .review2, .review3 {
-  display: flex;
-  align-items: center;
+  @include flex-center;
 }
 
 .review1, .review2 {
-  border-bottom: 1px solid $secondary-color;
+  border-bottom: 1px solid clr(secondary);
 }
 
 .right-review {
@@ -245,10 +240,8 @@ h2 {
 }
 
 .create {
-  font-family: $font-secondary;
-  font-weight: bold;
-  color: $secondary-color;
-  font-size: 4vw;
+  @include text($font-secondary, $font-xl, bold)
+  color: clr(secondary);
   width: $w-90;
   margin: auto;
   text-align: center;

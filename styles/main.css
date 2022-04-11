@@ -42,10 +42,10 @@ nav {
 
 #maintitle {
   font-family: "Titillium Web", sans-serif;
-  color: white;
+  font-size: 1rem;
   font-weight: bold;
-  margin-left: 16px;
-  font-size: 1rem; }
+  color: white;
+  margin-left: 16px; }
 
 #mail {
   width: 240px;
@@ -67,6 +67,7 @@ nav {
 
 #menu {
   font-family: "Titillium Web", sans-serif;
+  font-size: 1rem;
   font-weight: bold;
   margin: 0;
   display: flex; }
@@ -102,16 +103,19 @@ footer {
 
 .mainpage-container {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  align-items: center; }
 
 .mainpage {
   display: flex;
-  flex-direction: row-reverse;
-  align-items: center; }
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse; }
 
 .role {
   font-family: "Alegreya Sans SC", sans-serif;
   font-size: 4rem;
+  font-weight: normal;
   color: white;
   margin-left: auto; }
   .role li {
@@ -149,9 +153,9 @@ footer {
 
 .working {
   font-family: "Alegreya Sans SC", sans-serif;
+  font-size: 1rem;
   font-weight: bold;
   color: black;
-  font-size: 1rem;
   text-align: center; }
   .working p {
     font-size: 1.4em; }
@@ -177,9 +181,12 @@ footer {
 
 #video-menu {
   font-family: "Titillium Web", sans-serif;
+  font-size: 1rem;
   font-weight: bold;
   writing-mode: vertical-rl;
   display: flex;
+  justify-content: center;
+  align-items: center;
   height: 80%;
   flex-direction: row;
   position: relative; }
@@ -290,8 +297,10 @@ footer {
 audio {
   width: -webkit-fill-available; }
 
-.sound-title, .sound-subtitle {
+.sound-subtitle, .sound-title {
   font-family: "Titillium Web", sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
   color: black;
   text-transform: uppercase;
   margin: 4px;
@@ -330,6 +339,8 @@ audio {
 
 .story {
   font-family: "Titillium Web", sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
   color: white;
   padding: 30px;
   grid-area: story;
@@ -344,10 +355,11 @@ audio {
 .greetings {
   grid-area: greetings; }
   .greetings h1 {
-    margin: 0;
-    text-align: center;
+    font-family: "Titillium Web", sans-serif;
     font-size: 4rem;
-    font-weight: bold; }
+    font-weight: bold;
+    margin: 0;
+    text-align: center; }
 
 .paragraph1 {
   grid-area: paragraph1;
@@ -377,11 +389,12 @@ audio {
   margin: 0px 20px; }
 
 .logo-carousel {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
   overflow: inherit;
   border: none;
-  font-family: "Titillium Web", sans-serif;
   color: white;
-  font-size: 1em;
   text-align: center; }
 
 .slick-slide img {
@@ -397,20 +410,17 @@ audio {
     filter: none;
     transform: scale(1.1, 1.1); }
 
-.slick-track {
+.slick-track, .slick-loading .slick-slide {
   padding: 1rem 0; }
-  .slick-track::before {
+  .slick-track::before, .slick-loading .slick-slide::before {
     display: table;
     content: ''; }
-  .slick-track::after {
+  .slick-track::after, .slick-loading .slick-slide::after {
     display: table;
     content: '';
     clear: both; }
 
-.slick-loading .slick-track {
-  visibility: hidden; }
-
-.slick-loading .slick-slide {
+.slick-loading .slick-track, .slick-loading .slick-slide {
   visibility: hidden; }
 
 .slick-slide.slick-loading img {
@@ -455,8 +465,9 @@ audio {
 
 .client-item {
   font-family: "Titillium Web", sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
   color: white;
-  font-size: 1em;
   text-align: center; }
   .client-item a:hover {
     text-decoration: none; }
@@ -467,9 +478,9 @@ audio {
 /* end logos for mobile */
 h2 {
   font-family: "Titillium Web", sans-serif;
+  font-size: 2rem;
   font-weight: bold;
   color: white;
-  font-size: 2em;
   padding: 1.5em;
   padding-left: 3em;
   padding-bottom: .5em; }
@@ -478,11 +489,12 @@ h2 {
   grid-area: reviews; }
 
 .reviews-grid {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
   display: grid;
   grid-template-columns: 1fr;
-  font-family: 'Titillium Web', sans-serif;
   color: white;
-  font-size: 1em;
   text-align: center;
   align-items: center;
   margin: auto;
@@ -492,6 +504,7 @@ h2 {
 
 .review1, .review2, .review3 {
   display: flex;
+  justify-content: center;
   align-items: center; }
 
 .review1, .review2 {
@@ -515,9 +528,9 @@ h2 {
 
 .create {
   font-family: "Titillium Web", sans-serif;
+  font-size: 4rem;
   font-weight: bold;
   color: white;
-  font-size: 4vw;
   width: 90%;
   margin: auto;
   text-align: center;
@@ -550,21 +563,25 @@ form {
     color: black; }
 
 input, select, textarea {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  border: 1px solid gray;
+  border-radius: 2px;
   margin: 0.5%;
   background-color: black;
   color: white;
   padding: .5em;
   width: 100%;
-  border: 1px solid gray;
-  border-radius: 2px;
-  font-family: "Titillium Web", sans-serif;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 label {
-  color: gray;
   font-family: "Titillium Web", sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  color: gray;
   text-transform: uppercase;
   font-style: italic; }
 
@@ -738,6 +755,8 @@ select {
     margin: 8px; }
   .review1, .review2, .review3 {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column; }
   .review2 {
     flex-direction: column-reverse; }
