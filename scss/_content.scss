@@ -74,3 +74,8 @@ h2 {
   padding-left: 3em;
   padding-bottom: .5em;
 }
+
+span {
+  @include text($font-secondary, $font-sm, normal)
+  color: clr(secondary);
+}

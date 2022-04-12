@@ -167,6 +167,12 @@ h2 {
   padding-left: 3em;
   padding-bottom: .5em; }
 
+span {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  color: white; }
+
 .mainpage-container {
   display: flex;
   justify-content: center;
@@ -686,6 +692,28 @@ select {
     color: black;
     font-weight: bold; }
 
+.error-message {
+  margin-left: 32px;
+  padding: 16px;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  color: white; }
+
+#error-dog {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  height: 50vh; }
+
+.error-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.error-title {
+  padding: 16px;
+  margin-left: 32px; }
+
 @media (max-width: 576px) {
   h1 {
     font-size: 1.75rem;
@@ -857,7 +885,11 @@ select {
     margin: auto;
     width: 90%; }
   #form-opener {
-    padding: 8px; } }
+    padding: 8px; }
+  .error-flex {
+    flex-direction: column; }
+  #error-dog {
+    height: 30vh; } }
 
 @media (min-device-width: 577px) and (max-device-width: 1023px) {
   .header {
@@ -940,7 +972,11 @@ select {
   .button {
     width: auto; }
   #form-opener {
-    padding: 16px; } }
+    padding: 16px; }
+  .error-flex {
+    flex-direction: column; }
+  #error-dog {
+    height: 50vh; } }
 
 @media (min-device-width: 1024px) and (max-device-width: 1439px) {
   .work-video iframe {
