@@ -109,7 +109,7 @@
 }
 
 .socialmedia-grid {
-  background-color: clr(main);
+  background-color: transparent;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: minmax(0, auto) minmax(0, auto);

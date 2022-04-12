@@ -101,6 +101,72 @@ footer {
           -webkit-transition: 0.5s;
           outline: none; }
 
+body {
+  background-color: black;
+  margin: 0;
+  position: relative;
+  min-height: 100vh;
+  min-width: 100%; }
+
+.wrapper-scroll {
+  min-width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-gap: 0;
+  grid-template-areas: "header" "content" "footer"; }
+
+.header {
+  grid-area: header; }
+
+.main-content {
+  grid-area: content;
+  align-self: center; }
+
+.footer {
+  grid-area: footer; }
+
+/* Video background */
+.videobg {
+  min-width: 100%;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -2;
+  opacity: 0.5; }
+
+a {
+  text-decoration: none;
+  color: white;
+  padding: 0; }
+  a:hover {
+    text-decoration: none;
+    color: white; }
+
+li {
+  list-style-type: none; }
+
+h1 {
+  margin: 16px;
+  margin-left: 32px;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  color: white; }
+
+h2 {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  padding: 1.5em;
+  padding-left: 3em;
+  padding-bottom: .5em; }
+
 .mainpage-container {
   display: flex;
   justify-content: center;
@@ -261,7 +327,7 @@ footer {
   width: 94%; }
 
 .socialmedia-grid {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: transparent;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: minmax(0, auto) minmax(0, auto);
@@ -464,7 +530,8 @@ audio {
     height: 1rem; } }
 
 .row {
-  overflow: hidden; }
+  overflow: hidden;
+  max-width: 100%; }
 
 /* end-slider */
 /* logos for mobile */
@@ -543,7 +610,7 @@ audio {
       position: absolute;
       width: 100%;
       transform: scaleX(0);
-      height: 16px;
+      height: 8px;
       bottom: 0;
       left: 0;
       background-color: white;
@@ -620,6 +687,12 @@ select {
     font-weight: bold; }
 
 @media (max-width: 576px) {
+  h1 {
+    font-size: 1.75rem;
+    margin: 8px;
+    margin-left: 16px; }
+  h2 {
+    font-size: 1.3rem; }
   .header {
     align-self: start; }
   .mainpage {
@@ -679,7 +752,7 @@ select {
     padding: 0;
     flex-direction: column;
     margin-bottom: 0;
-    margin-top: 16px; }
+    align-items: flex-start; }
     #video-menu li {
       transform: rotate(0deg); }
     #video-menu a:after {
@@ -692,12 +765,11 @@ select {
       margin: 16px; }
   #animations ul li {
     margin: 16px; }
-  #socialmedia {
+  .socialmedia-grid {
     grid-template-columns: auto;
     grid-gap: 1%;
-    width: auto;
-    background-color: transparent; }
-    #socialmedia iframe {
+    width: auto; }
+    .socialmedia-grid iframe {
       height: 512px; }
   .sound-grid {
     width: 90%;
@@ -737,6 +809,8 @@ select {
     font-size: 2rem; }
   h2 {
     padding: 16px; }
+  .aboutme-subheading {
+    font-size: 1.8rem; }
   .row {
     display: none; }
   .mobile-logos {
@@ -814,11 +888,11 @@ select {
     height: 315px; }
   #video-menu li {
     padding: 4px; }
-  #socialmedia {
+  .socialmedia-grid {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1%;
     width: auto; }
-    #socialmedia iframe {
+    .socialmedia-grid iframe {
       width: 288px;
       height: 512px; }
   .sound-grid {
@@ -875,74 +949,8 @@ select {
   iframe {
     width: 864px;
     height: 486px; }
-  #socialmedia {
+  .socialmedia-grid {
     background-color: transparent; }
-    #socialmedia iframe {
+    .socialmedia-grid iframe {
       width: 207px;
       height: 368px; } }
-
-body {
-  background-color: black;
-  margin: 0;
-  position: relative;
-  min-height: 100vh;
-  min-width: 100%; }
-
-.wrapper-scroll {
-  min-width: 100%;
-  min-height: 100vh;
-  display: grid;
-  grid-gap: 0;
-  grid-template-areas: "header" "content" "footer"; }
-
-.header {
-  grid-area: header; }
-
-.main-content {
-  grid-area: content;
-  align-self: center; }
-
-.footer {
-  grid-area: footer; }
-
-a {
-  text-decoration: none;
-  color: white;
-  padding: 0; }
-  a:hover {
-    text-decoration: none;
-    color: white; }
-
-li {
-  list-style-type: none; }
-
-h1 {
-  margin: 16px;
-  margin-left: 32px;
-  font-family: "Titillium Web", sans-serif;
-  font-size: 3rem;
-  font-weight: bold;
-  color: white; }
-
-h2 {
-  font-family: "Titillium Web", sans-serif;
-  font-size: 2rem;
-  font-weight: bold;
-  color: white;
-  padding: 1.5em;
-  padding-left: 3em;
-  padding-bottom: .5em; }
-
-/* Video background */
-.videobg {
-  min-width: 100%;
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: -2;
-  opacity: 0.5; }

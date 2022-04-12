@@ -160,6 +160,7 @@
 
 .row {
   overflow: hidden;
+  max-width: $w-100;
 }
 /* end-slider */
 
@@ -246,7 +247,7 @@
       position: absolute;
       width: $w-100;
       transform: scaleX(0);
-      height: $sp-lg;
+      height: $sp-md;
       bottom: $sp-0;
       left: $sp-0;
       background-color: clr(secondary);

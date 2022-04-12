@@ -1,5 +1,15 @@
 @media (max-width: 576px) {
 
+  h1 {
+    font-size: 1.75rem;
+    margin: $sp-md;
+    margin-left: $sp-lg;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
   .header {
     align-self: start;
   }
@@ -100,7 +110,7 @@
     padding: $sp-0;
     flex-direction: column;
     margin-bottom: $sp-0;
-    margin-top: $sp-lg;
+    align-items: flex-start;
     li {
       transform: rotate(0deg);
     }
@@ -133,11 +143,10 @@
   	}
   }
 
-  #socialmedia {
+  .socialmedia-grid {
     grid-template-columns: auto;
     grid-gap: 1%;
     width: auto;
-    background-color: transparent;
     iframe {
       height: 512px;
     }
@@ -203,6 +212,10 @@
 
   h2 {
     padding: $sp-lg;
+  }
+
+  .aboutme-subheading {
+    font-size: 1.8rem;
   }
 
   .row {
