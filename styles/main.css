@@ -123,7 +123,8 @@ footer {
 
 .display-2 {
   font-weight: 600;
-  font-size: 3rem; }
+  font-size: 3rem;
+  margin-bottom: 0; }
 
 #MOTION-DESIGNER {
   animation-delay: 0.5s; }
