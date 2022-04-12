@@ -240,12 +240,12 @@ h2 {
 }
 
 .create {
-  @include text($font-secondary, $font-xl, bold)
+  @include text($font-secondary, $font-lg, bold)
   color: clr(secondary);
   width: $w-90;
   margin: auto;
   text-align: center;
-  padding: 1em;
+  padding: $sp-md;
   font-style: italic;
   a {
     position: relative;

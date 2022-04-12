@@ -529,13 +529,13 @@ h2 {
 
 .create {
   font-family: "Titillium Web", sans-serif;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: bold;
   color: white;
   width: 90%;
   margin: auto;
   text-align: center;
-  padding: 1em;
+  padding: 8px;
   font-style: italic; }
   .create a {
     position: relative;
@@ -849,6 +849,8 @@ select {
     text-align: left; }
   .reviews-grid img {
     width: inherit; }
+  .create {
+    font-size: 2.5rem; }
   .button {
     width: auto; }
   #form-opener {
