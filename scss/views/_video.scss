@@ -49,6 +49,10 @@
 	}
 }
 
+.section-title {
+  padding: $sp-lg;
+}
+
 .video-menu-item {
   padding: $sp-0;
   background: none;
@@ -101,17 +105,21 @@
 #socialmedia {
   grid-area: socialmedia;
   padding: $sp-0;
-  background-color: clr(main);
+  width: 94%;
+}
+
+.socialmedia-grid {
+  background-color: transparent;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: minmax(0, auto) minmax(0, auto);
   grid-gap: 4%;
   justify-items: center;
+  align-items: center;
   width: $w-100;
   iframe {
     max-width: $w-100;
     max-height: $w-100;
-    margin: 5%;
   }
 }
 

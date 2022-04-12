@@ -3,6 +3,7 @@
 @import "_typography";
 @import "_header";
 @import "_footer";
+@import "_content";
 @import "views/_index";
 @import "views/_video";
 @import "views/_sound";
@@ -11,64 +12,3 @@
 @import "media-queries/_mobile";
 @import "media-queries/_tablet";
 @import "media-queries/_laptop";
-
-body {
-  background-color: clr(key);
-  margin: $sp-0;
-  position: relative;
-  min-height: 100vh;
-  min-width: $w-100;
-}
-
-.wrapper-scroll {
-  min-width: 100%;
-  min-height: 100vh;
-  display: grid;
-  grid-gap: $sp-0;
-  grid-template-areas:
-    "header"
-    "content"
-    "footer";
-}
-
-.header {
-  grid-area: header;
-}
-
-.main-content {
-  grid-area: content;
-  align-self: center;
-}
-
-.footer {
-  grid-area: footer;
-}
-
-a {
-  text-decoration: none;
-  color: white;
-  padding: 0;
-  &:hover {
-    text-decoration: none;
-    color: white;
-  }
-}
-
-li {
-  list-style-type: none;
-}
-
-/* Video background */
-.videobg {
-  min-width: $w-100;
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  position: fixed;
-  left: $sp-0;
-  right: $sp-0;
-  top: $sp-0;
-  bottom: $sp-0;
-  z-index: -2;
-  opacity: 0.5;
-}

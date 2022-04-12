@@ -17,8 +17,9 @@
 }
 
 .display-2 {
+  @include text($font-main, $font-lg, normal)
   font-weight: 600;
-  font-size: $font-lg;
+  margin: $sp-0;
 }
 
 #MOTION-DESIGNER {

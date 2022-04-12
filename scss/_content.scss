@@ -1,0 +1,76 @@
+//general styles
+body {
+  background-color: clr(key);
+  margin: $sp-0;
+  position: relative;
+  min-height: 100vh;
+  min-width: $w-100;
+}
+
+.wrapper-scroll {
+  min-width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-gap: $sp-0;
+  grid-template-areas:
+    "header"
+    "content"
+    "footer";
+}
+
+.header {
+  grid-area: header;
+}
+
+.main-content {
+  grid-area: content;
+  align-self: center;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+/* Video background */
+.videobg {
+  min-width: $w-100;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: $sp-0;
+  right: $sp-0;
+  top: $sp-0;
+  bottom: $sp-0;
+  z-index: -2;
+  opacity: 0.5;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  padding: 0;
+  &:hover {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+li {
+  list-style-type: none;
+}
+
+h1 {
+  margin: $sp-lg;
+  margin-left: 32px;
+  @include text($font-secondary, $font-lg, bold)
+  color: clr(secondary)
+}
+
+h2 {
+  @include text($font-secondary, $font-md, bold)
+  color: clr(secondary);
+  padding: 1.5em;
+  padding-left: 3em;
+  padding-bottom: .5em;
+}
