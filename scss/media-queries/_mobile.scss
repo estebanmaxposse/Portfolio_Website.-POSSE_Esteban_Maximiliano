@@ -291,4 +291,12 @@
   #form-opener {
     padding: $sp-md;
   }
+
+  .error-flex {
+    flex-direction: column;
+  }
+
+  #error-dog {
+    height: 30vh;
+  }
 }

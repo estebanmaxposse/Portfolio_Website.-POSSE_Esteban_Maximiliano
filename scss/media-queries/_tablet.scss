@@ -146,4 +146,12 @@
   #form-opener {
     padding: $sp-lg;
   }
+
+  .error-flex {
+    flex-direction: column;
+  }
+
+  #error-dog {
+    height: 50vh;
+  }
 }

@@ -1,0 +1,21 @@
+.error-message {
+  margin-left: 32px;
+  padding: $sp-lg;
+  @include text($font-secondary, $font-sm, normal)
+  color: clr(secondary);
+}
+
+#error-dog {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  height: 50vh;
+}
+
+.error-flex {
+  @include flex-center;
+}
+
+.error-title {
+  padding: $sp-lg;
+  margin-left: 32px;
+}
