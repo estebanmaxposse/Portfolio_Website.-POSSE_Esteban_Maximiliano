@@ -122,9 +122,11 @@ footer {
     text-align: right; }
 
 .display-2 {
-  font-weight: 600;
+  font-family: "Alegreya Sans SC", sans-serif;
   font-size: 3rem;
-  margin-bottom: 0; }
+  font-weight: normal;
+  font-weight: 600;
+  margin: 0; }
 
 #MOTION-DESIGNER {
   animation-delay: 0.5s; }
@@ -209,6 +211,9 @@ footer {
     transform: rotate(180deg);
     padding: 12px; }
 
+.section-title {
+  padding: 16px; }
+
 .video-menu-item {
   padding: 0;
   background: none;
@@ -253,17 +258,20 @@ footer {
 #socialmedia {
   grid-area: socialmedia;
   padding: 0;
+  width: 94%; }
+
+.socialmedia-grid {
   background-color: rgba(0, 0, 0, 0.5);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: minmax(0, auto) minmax(0, auto);
   grid-gap: 4%;
   justify-items: center;
+  align-items: center;
   width: 100%; }
-  #socialmedia iframe {
+  .socialmedia-grid iframe {
     max-width: 100%;
-    max-height: 100%;
-    margin: 5%; }
+    max-height: 100%; }
 
 #animations {
   grid-area: animations;
@@ -456,8 +464,7 @@ audio {
     height: 1rem; } }
 
 .row {
-  overflow: hidden;
-  max-width: 100%; }
+  overflow: hidden; }
 
 /* end-slider */
 /* logos for mobile */
@@ -477,15 +484,6 @@ audio {
   margin: auto; }
 
 /* end logos for mobile */
-h2 {
-  font-family: "Titillium Web", sans-serif;
-  font-size: 2rem;
-  font-weight: bold;
-  color: white;
-  padding: 1.5em;
-  padding-left: 3em;
-  padding-bottom: .5em; }
-
 .reviews {
   grid-area: reviews; }
 
@@ -541,7 +539,19 @@ h2 {
     position: relative;
     display: inline-block; }
     .create a:after {
-      height: 8px; }
+      content: '';
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 16px;
+      bottom: 0;
+      left: 0;
+      background-color: white;
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-out; }
+    .create a:not(.not-hoverable):hover:after {
+      transform: scaleX(1);
+      transform-origin: bottom left; }
 
 #form-opener {
   padding: 0; }
@@ -849,6 +859,8 @@ select {
     text-align: left; }
   .reviews-grid img {
     width: inherit; }
+  .container {
+    padding: 0; }
   .create {
     font-size: 2.5rem; }
   .button {
@@ -903,6 +915,23 @@ a {
 
 li {
   list-style-type: none; }
+
+h1 {
+  margin: 16px;
+  margin-left: 32px;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  color: white; }
+
+h2 {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  padding: 1.5em;
+  padding-left: 3em;
+  padding-bottom: .5em; }
 
 /* Video background */
 .videobg {

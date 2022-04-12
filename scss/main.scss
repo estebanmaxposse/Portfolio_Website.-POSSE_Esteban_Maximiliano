@@ -58,6 +58,21 @@ li {
   list-style-type: none;
 }
 
+h1 {
+  margin: $sp-lg;
+  margin-left: 32px;
+  @include text($font-secondary, $font-lg, bold)
+  color: clr(secondary)
+}
+
+h2 {
+  @include text($font-secondary, $font-md, bold)
+  color: clr(secondary);
+  padding: 1.5em;
+  padding-left: 3em;
+  padding-bottom: .5em;
+}
+
 /* Video background */
 .videobg {
   min-width: $w-100;

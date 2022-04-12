@@ -160,7 +160,6 @@
 
 .row {
   overflow: hidden;
-  max-width: $w-100;
 }
 /* end-slider */
 
@@ -184,14 +183,6 @@
   margin: auto;
 }
 /* end logos for mobile */
-
-h2 {
-  @include text($font-secondary, $font-md, bold)
-  color: clr(secondary);
-  padding: 1.5em;
-  padding-left: 3em;
-  padding-bottom: .5em;
-}
 
 .reviews {
   grid-area: reviews;
@@ -251,7 +242,24 @@ h2 {
     position: relative;
     display: inline-block;
     &:after {
-      height: $sp-md;
+      content: '';
+      position: absolute;
+      width: $w-100;
+      transform: scaleX(0);
+      height: $sp-lg;
+      bottom: $sp-0;
+      left: $sp-0;
+      background-color: clr(secondary);
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-out;
     }
+    &:not(.not-hoverable) {
+			&:hover {
+				&:after {
+					transform: scaleX(1);
+					transform-origin: bottom left;
+				}
+			}
+		}
   }
 }
