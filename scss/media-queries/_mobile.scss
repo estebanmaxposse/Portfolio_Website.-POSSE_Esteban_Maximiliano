@@ -33,9 +33,9 @@
   #menu {
   	li {
   		padding: 0.3rem;
-      &:last-child {
-  			padding-bottom: $sp-md;
-  		}
+      &:nth-child(5) {
+        padding: 1.2rem 0;
+      }
   	}
   }
 
@@ -53,6 +53,10 @@
 
   #mail {
     display: none;
+  }
+
+  #mail2 {
+    display: block;
   }
 
   .working {

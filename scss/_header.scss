@@ -72,6 +72,18 @@ nav {
   }
 }
 
+#mail2 {
+  display: none;
+  width: 100%;
+  @include border (1px, clr(secondary), 50px);
+  &:hover {
+    border-color: clr(green);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    outline: none;
+  }
+}
+
 .menu {
   flex-grow: 0;
   ul {
@@ -80,6 +92,9 @@ nav {
 				text-decoration: none;
 				color: clr(secondary);
 				padding: $sp-0;
+        &:hover {
+          color: clr(secondary);
+        }
 			}
 		}
 	}
@@ -93,5 +108,62 @@ nav {
     padding: 20px;
     text-align: center;
     margin: $sp-0;
+  }
+}
+
+.offcanvas {
+  background-color: rgba(0, 0, 0, .7);
+  border-left: clr(secondary) solid 1px;
+}
+
+.offcanvas-header {
+  justify-content: flex-end;
+  padding: .5rem 1rem;
+}
+
+.offcanvas-body {
+  padding: .5rem 1rem;
+}
+
+.nav-link {
+  color: clr(secondary)
+}
+
+.dropdown-social {
+  align-self: flex-end;
+}
+
+.dropdown-social-text {
+  text-transform: uppercase;
+  font-style: italic;
+  padding: $sp-lg;
+}
+
+@media (min-width : 992px) {
+  .offcanvas {
+    visibility: visible;
+    position: relative;
+    flex-grow: 0;
+  }
+
+  .offcanvas-end {
+    max-width: 70vw;
+  }
+
+  .navbar-expand-lg {
+    flex-grow: 0;
+  }
+}
+
+@media (max-width : 992px) {
+  .offcanvas {
+    width : 250px;
+  }
+
+  .offcanvas-start-lg {
+    top          : 0;
+    left         : 0;
+    border-right : 1px solid rgba(0, 0, 0, .2);
+    transform    : translateX(-100%);
   }
 }

@@ -58,12 +58,25 @@ nav {
     -webkit-transition: 0.5s;
     outline: none; }
 
+#mail2 {
+  display: none;
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 50px; }
+  #mail2:hover {
+    border-color: #00ff00;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    outline: none; }
+
 .menu {
   flex-grow: 0; }
   .menu ul .nav-item .nav-link {
     text-decoration: none;
     color: white;
     padding: 0; }
+    .menu ul .nav-item .nav-link:hover {
+      color: white; }
 
 #menu {
   font-family: "Titillium Web", sans-serif;
@@ -75,6 +88,47 @@ nav {
     padding: 20px;
     text-align: center;
     margin: 0; }
+
+.offcanvas {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-left: white solid 1px; }
+
+.offcanvas-header {
+  justify-content: flex-end;
+  padding: .5rem 1rem; }
+
+.offcanvas-body {
+  padding: .5rem 1rem; }
+
+.nav-link {
+  color: white; }
+
+.dropdown-social {
+  align-self: flex-end; }
+
+.dropdown-social-text {
+  text-transform: uppercase;
+  font-style: italic;
+  padding: 16px; }
+
+@media (min-width: 992px) {
+  .offcanvas {
+    visibility: visible;
+    position: relative;
+    flex-grow: 0; }
+  .offcanvas-end {
+    max-width: 70vw; }
+  .navbar-expand-lg {
+    flex-grow: 0; } }
+
+@media (max-width: 992px) {
+  .offcanvas {
+    width: 250px; }
+  .offcanvas-start-lg {
+    top: 0;
+    left: 0;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    transform: translateX(-100%); } }
 
 .footer-bg {
   background-color: rgba(0, 0, 0, 0.5); }
@@ -735,8 +789,8 @@ select {
     align-items: flex-end; }
   #menu li {
     padding: 0.3rem; }
-    #menu li:last-child {
-      padding-bottom: 8px; }
+    #menu li:nth-child(5) {
+      padding: 1.2rem 0; }
   iframe {
     width: 280px;
     height: 157px; }
@@ -745,6 +799,8 @@ select {
     height: 135px; }
   #mail {
     display: none; }
+  #mail2 {
+    display: block; }
   .working {
     font-size: 1em; }
   .role, .display-2 {
@@ -903,7 +959,12 @@ select {
     flex-direction: column-reverse;
     margin: 16px; }
   #menu {
-    padding: 0; }
+    padding: 0;
+    align-items: flex-end; }
+  #menu li {
+    padding: 16px; }
+  .offcanvas-header {
+    padding: 1rem; }
   .role {
     font-size: 4rem;
     margin: 0; }
@@ -978,10 +1039,18 @@ select {
   #error-dog {
     height: 50vh; } }
 
-@media (min-device-width: 1024px) and (max-device-width: 1439px) {
+@media (min-device-width: 1024px) {
   .work-video iframe {
     width: 496px;
     height: 279px; }
+  .navbar-expand-lg .offcanvas {
+    flex-grow: 0; }
+  .offcanvas-end {
+    width: auto; }
+  .dropdown-social {
+    display: none; }
+  .mail-container {
+    display: none; }
   iframe {
     width: 864px;
     height: 486px; }
