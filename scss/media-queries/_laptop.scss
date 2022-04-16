@@ -1,9 +1,25 @@
-@media (min-device-width : 1024px) and (max-device-width : 1439px) {
+@media (min-device-width : 1024px){
   .work-video {
   	iframe {
   		width: 496px;
   		height: 279px;
   	}
+  }
+
+  .navbar-expand-lg .offcanvas {
+    flex-grow: 0;
+  }
+
+  .offcanvas-end {
+    width: auto;
+  }
+
+  .dropdown-social {
+    display: none;
+  }
+
+  .mail-container {
+    display: none;
   }
 
   iframe {
@@ -18,4 +34,5 @@
   		height: 368px;
   	}
   }
+
 }

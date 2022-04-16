@@ -20,6 +20,15 @@
 
   #menu {
     padding: $sp-0;
+    align-items: flex-end;
+  }
+
+  #menu li {
+    padding: $sp-lg;
+  }
+
+  .offcanvas-header {
+    padding: 1rem;
   }
 
   .role {
