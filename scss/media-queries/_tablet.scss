@@ -10,7 +10,7 @@
   }
 
   .footer {
-    align-self: baseline;
+    align-self: end;
   }
 
   .mainpage {
@@ -21,10 +21,9 @@
   #menu {
     padding: $sp-0;
     align-items: flex-end;
-  }
-
-  #menu li {
-    padding: $sp-lg;
+    li {
+      padding: $sp-lg;
+    }
   }
 
   .offcanvas-header {
@@ -41,7 +40,6 @@
         text-align: center;
       }
     }
-
   }
 
   .work-video {
@@ -49,8 +47,8 @@
   		width: 560px;
   		height: 315px;
   	}
-
   }
+
   iframe {
   	width: 560px;
   	height: 315px;

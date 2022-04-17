@@ -1,5 +1,4 @@
 @media (max-width: 576px) {
-
   h1 {
     font-size: 1.75rem;
     margin: $sp-md;
@@ -121,7 +120,6 @@
     a {
       &:after {
         top: 22px;
-
       }
     }
   }
@@ -302,5 +300,25 @@
 
   #error-dog {
     height: 30vh;
+  }
+}
+
+//galaxy fold querie
+@media (max-width: 306px) {
+
+  iframe {
+    width: 240px;
+    height: 135px;
+  }
+
+  .navbar-brand {
+    margin: 0;
+  }
+
+  .work-video {
+    iframe {
+      width: 208px;
+      height: 117px;
+    }
   }
 }

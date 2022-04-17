@@ -129,16 +129,17 @@ nav {
   color: clr(secondary)
 }
 
-.dropdown-social {
+.drawer-social {
   align-self: flex-end;
 }
 
-.dropdown-social-text {
+.drawer-social-text {
   text-transform: uppercase;
   font-style: italic;
   padding: $sp-lg;
 }
 
+//drawer media queries
 @media (min-width : 992px) {
   .offcanvas {
     visibility: visible;
