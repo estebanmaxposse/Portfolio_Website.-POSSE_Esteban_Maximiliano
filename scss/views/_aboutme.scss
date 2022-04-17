@@ -67,10 +67,6 @@
   filter:#{"grayscale(#{$value})"};
 }
 
-.slick-slide {
-  margin: 0px 20px;
-}
-
 .logo-carousel {
   @include text($font-secondary, $font-sm, normal)
   overflow: inherit;
@@ -80,6 +76,7 @@
 }
 
 .slick-slide {
+  margin: 0px 20px;
 	img {
 		width: $w-100;
 		min-height: 90px;
@@ -95,6 +92,7 @@
 }
 
 .slick-track {
+  padding: 1rem 0;
 	&::before {
 		display: table;
 		content: '';
@@ -104,7 +102,6 @@
 		content: '';
 		clear: both;
 	}
-	padding: 1rem 0;
 }
 
 .slick-loading {

@@ -103,10 +103,10 @@ nav {
 .nav-link {
   color: white; }
 
-.dropdown-social {
+.drawer-social {
   align-self: flex-end; }
 
-.dropdown-social-text {
+.drawer-social-text {
   text-transform: uppercase;
   font-style: italic;
   padding: 16px; }
@@ -520,9 +520,6 @@ audio {
   grid-area: clients; }
 
 /* slider */
-.slick-slide {
-  margin: 0px 20px; }
-
 .logo-carousel {
   font-family: "Titillium Web", sans-serif;
   font-size: 1rem;
@@ -532,18 +529,20 @@ audio {
   color: white;
   text-align: center; }
 
-.slick-slide img {
-  width: 100%;
-  min-height: 90px;
-  max-height: 100px;
-  object-fit: scale-down;
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  filter: grayscale(100%);
-  transition: transform 0.3s ease-in-out, filter .5s ease-in-out; }
-  .slick-slide img:hover {
-    filter: none;
-    transform: scale(1.1, 1.1); }
+.slick-slide {
+  margin: 0px 20px; }
+  .slick-slide img {
+    width: 100%;
+    min-height: 90px;
+    max-height: 100px;
+    object-fit: scale-down;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: transform 0.3s ease-in-out, filter .5s ease-in-out; }
+    .slick-slide img:hover {
+      filter: none;
+      transform: scale(1.1, 1.1); }
 
 .slick-track, .slick-loading .slick-slide {
   padding: 1rem 0; }
@@ -954,15 +953,15 @@ select {
     padding-top: 2%;
     padding-bottom: 2%; }
   .footer {
-    align-self: baseline; }
+    align-self: end; }
   .mainpage {
     flex-direction: column-reverse;
     margin: 16px; }
   #menu {
     padding: 0;
     align-items: flex-end; }
-  #menu li {
-    padding: 16px; }
+    #menu li {
+      padding: 16px; }
   .offcanvas-header {
     padding: 1rem; }
   .role {
@@ -1047,7 +1046,7 @@ select {
     flex-grow: 0; }
   .offcanvas-end {
     width: auto; }
-  .dropdown-social {
+  .drawer-social {
     display: none; }
   .mail-container {
     display: none; }
