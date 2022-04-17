@@ -946,6 +946,16 @@ select {
   #error-dog {
     height: 30vh; } }
 
+@media (max-width: 306px) {
+  iframe {
+    width: 240px;
+    height: 135px; }
+  .navbar-brand {
+    margin: 0; }
+  .work-video iframe {
+    width: 208px;
+    height: 117px; } }
+
 @media (min-device-width: 577px) and (max-device-width: 1023px) {
   .header {
     align-self: start; }
