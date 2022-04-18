@@ -1,4 +1,4 @@
-@media (min-device-width : 577px) and (max-device-width : 1023px) {
+@media (min-device-width : 683px) and (max-device-width : 1023px) {
 
   .header {
     align-self: start;
@@ -160,5 +160,47 @@
 
   #error-dog {
     height: 50vh;
+  }
+}
+
+@media (min-device-width : 577px) and (max-device-width : 682px) {
+
+  .role {
+    font-size: $font-xl;
+    margin: $sp-0;
+    ul {
+      padding: $sp-0;
+      margin: $sp-lg;
+      li {
+        text-align: center;
+      }
+    }
+  }
+
+  .main-page {
+    flex-direction: column-reverse;
+    margin: $sp-lg;
+  }
+
+  iframe {
+    width: 448px;
+    height: 252px;
+  }
+
+  .work-video {
+    iframe {
+      width: 448px;
+      height: 252px;
+    }
+  }
+
+  .socialmedia-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1%;
+    width: auto;
+    iframe {
+      width: 180px;
+      height: 320px;
+    }
   }
 }
