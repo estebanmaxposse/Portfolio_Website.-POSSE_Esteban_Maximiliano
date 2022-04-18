@@ -1,8 +1,8 @@
-.mainpage-container {
+.main-page-container {
   @include flex-center;
 }
 
-.mainpage {
+.main-page {
   @include flex-center;
   flex-direction: row-reverse;
 }

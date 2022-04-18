@@ -13,7 +13,7 @@
     align-self: end;
   }
 
-  .mainpage {
+  .main-page {
     flex-direction: column-reverse;
     margin: $sp-lg;
   }
@@ -111,8 +111,8 @@
     grid-template-rows: 1fr 1fr 2fr;
     grid-template-areas:
       'greetings greetings . . photo1'
-      'paragraph1 paragraph1 paragraph1 paragraph1 photo1'
-      'paragraph2 paragraph2 paragraph2 paragraph2 photo1';
+      'paragraph-mid paragraph-mid paragraph-mid paragraph-mid photo1'
+      'paragraph-right paragraph-right paragraph-right paragraph-right photo1';
     grid-gap: 1px;
     justify-items: center;
     align-items: center;
@@ -128,7 +128,7 @@
     width: 80%;
   }
 
-  .paragraph2 {
+  .paragraph-right {
     text-align: left;
   }
 
@@ -150,7 +150,7 @@
     width: auto;
   }
 
-  #form-opener {
+  #form-header {
     padding: $sp-lg;
   }
 
