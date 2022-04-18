@@ -54,7 +54,7 @@ nav {
   }
 }
 
-#maintitle {
+#main-title {
   @include text($font-secondary, $font-sm, bold)
   color: clr(secondary);
   margin-left: $sp-lg;

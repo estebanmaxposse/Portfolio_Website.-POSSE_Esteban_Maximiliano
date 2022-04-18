@@ -13,7 +13,7 @@
     align-self: start;
   }
 
-  .mainpage {
+  .main-page {
     flex-direction: column-reverse;
     margin: $sp-lg;
   }
@@ -196,7 +196,7 @@
     padding: $sp-lg;
     grid-template-columns: 90vw;
     grid-template-rows: auto auto auto auto;
-    grid-template-areas: "greetings""paragraph1""photo1""paragraph2";
+    grid-template-areas: "greetings""paragraph-mid""photo1""paragraph-right";
     grid-gap: $sp-md;
     justify-items: center;
     align-items: center;
@@ -290,7 +290,7 @@
     width: $w-90;
   }
 
-  #form-opener {
+  #form-header {
     padding: $sp-md;
   }
 

@@ -17,8 +17,8 @@
   grid-template-rows: 1fr 1fr 2fr;
   grid-template-areas:
     "greetings greetings . . photo1 "
-    ". paragraph1 paragraph1 . photo1 "
-    ". . paragraph2 paragraph2 photo1 ";
+    ". paragraph-mid paragraph-mid . photo1 "
+    ". . paragraph-right paragraph-right photo1 ";
   grid-gap: $sp-lg;
   justify-items: center;
   align-items: center;
@@ -33,13 +33,13 @@
   }
 }
 
-.paragraph1 {
-  grid-area: paragraph1;
+.paragraph-mid {
+  grid-area: paragraph-mid;
   text-align: left;
 }
 
-.paragraph2 {
-  grid-area: paragraph2;
+.paragraph-right {
+  grid-area: paragraph-right;
   text-align: right;
 }
 
