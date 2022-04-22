@@ -316,7 +316,7 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80%;
+  height: 75%;
   flex-direction: row;
   position: relative; }
   #video-menu a:after {

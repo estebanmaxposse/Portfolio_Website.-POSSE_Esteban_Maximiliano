@@ -20,7 +20,7 @@
   @include text($font-secondary, $font-sm, bold)
 	writing-mode: vertical-rl;
   @include flex-center;
-	height: 80%;
+	height: 75%;
 	flex-direction: row;
 	position: relative;
 	a {
