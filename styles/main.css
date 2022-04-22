@@ -975,6 +975,9 @@ select {
     align-items: flex-end; }
     #menu li {
       padding: 16px; }
+  .navbar-expand-lg > .container-fluid {
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem); }
   .offcanvas-header {
     padding: 1rem; }
   .role {
