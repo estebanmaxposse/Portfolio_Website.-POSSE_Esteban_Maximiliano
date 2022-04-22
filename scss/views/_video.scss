@@ -2,7 +2,7 @@
   width: $w-100;
   display: grid;
   grid-gap: $sp-0;
-  grid-template-columns: 5% 1fr 5%;
+  grid-template-columns: repeat(3, 1fr);
   grid-template-areas:
     "sidebar video-content .";
 }
