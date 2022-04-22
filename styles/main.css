@@ -380,6 +380,10 @@ span {
     width: 90%;
     padding: 0;
     margin-bottom: 0; }
+    #shortfilms ul li {
+      padding: 16px; }
+      #shortfilms ul li iframe {
+        box-shadow: 5px 5px 5px black; }
 
 #socialmedia {
   grid-area: socialmedia;
@@ -397,7 +401,8 @@ span {
   width: 100%; }
   .socialmedia-grid iframe {
     max-width: 100%;
-    max-height: 100%; }
+    max-height: 100%;
+    box-shadow: 5px 5px 5px black; }
 
 #animations {
   grid-area: animations;
@@ -405,6 +410,10 @@ span {
   #animations ul {
     width: 90%;
     padding: 0; }
+    #animations ul li {
+      padding: 16px; }
+      #animations ul li iframe {
+        box-shadow: 5px 5px 5px black; }
 
 .sound-grid {
   margin: auto;
@@ -848,8 +857,10 @@ select {
   #shortfilms ul {
     margin: 0; }
     #shortfilms ul li {
+      padding: 0;
       margin: 16px; }
   #animations ul li {
+    padding: 0;
     margin: 16px; }
   .socialmedia-grid {
     grid-template-columns: auto;

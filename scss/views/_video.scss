@@ -99,6 +99,12 @@
     width: $w-90;
     padding: $sp-0;
     margin-bottom: $sp-0;
+    li {
+      padding: $sp-lg;
+      iframe {
+        box-shadow: 5px 5px 5px clr(key);
+      }
+    }
   }
 }
 
@@ -120,6 +126,7 @@
   iframe {
     max-width: $w-100;
     max-height: $w-100;
+    box-shadow: 5px 5px 5px clr(key);
   }
 }
 
@@ -129,5 +136,11 @@
   ul {
     width: $w-90;
     padding: $sp-0;
+    li {
+      padding: $sp-lg;
+      iframe {
+        box-shadow: 5px 5px 5px clr(key);
+      }
+    }
   }
 }
