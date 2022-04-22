@@ -790,6 +790,9 @@ select {
     padding: 0.3rem; }
     #menu li:nth-child(5) {
       padding: 1.2rem 0; }
+  .navbar-expand-lg > .container-fluid {
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem); }
   iframe {
     width: 280px;
     height: 157px; }

@@ -38,6 +38,11 @@
   	}
   }
 
+  .navbar-expand-lg>.container-fluid {
+    padding-right: var(--bs-gutter-x,.75rem);
+    padding-left: var(--bs-gutter-x,.75rem);
+  }
+
   iframe {
     width: 280px;
     height: 157px;
