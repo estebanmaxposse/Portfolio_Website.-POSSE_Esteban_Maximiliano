@@ -110,6 +110,45 @@
     <div class="content">
       <div class="main-page-container">
         <div class="main-page">
+          <!-- Botones a otras páginas (solo en mobile) -->
+          <div class="mobile-button-container">
+            <button class="mobile-button animate__animated animate__fadeIn" id="video-button">
+              <script type="text/javascript">
+                  document.getElementById("video-button").onclick = function () {
+                      location.href = "pages/video.html";
+                  };
+              </script>
+              <div></div>
+            </button>
+
+            <button class="mobile-button animate__animated animate__fadeIn" id="sound-button">
+              <script type="text/javascript">
+                  document.getElementById("sound-button").onclick = function () {
+                      location.href = "pages/sound.html";
+                  };
+              </script>
+              <div></div>
+            </button>
+
+            <button class="mobile-button animate__animated animate__fadeIn" id="aboutme-button">
+              <script type="text/javascript">
+                  document.getElementById("aboutme-button").onclick = function () {
+                      location.href = "pages/aboutme.html";
+                  };
+              </script>
+              <div></div>
+            </button>
+
+            <button class="mobile-button animate__animated animate__fadeIn" id="contact-button">
+              <script type="text/javascript">
+                  document.getElementById("contact-button").onclick = function () {
+                      location.href = "pages/contact.html";
+                  };
+              </script>
+              <div></div>
+            </button>
+          </div>
+
           <div class="role py-4">
             <ul>
               <li class="animate__animated animate__fadeIn" id="VIDEO-EDITOR">

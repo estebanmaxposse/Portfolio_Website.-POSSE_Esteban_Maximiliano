@@ -2,7 +2,7 @@
   width: $w-100;
   display: grid;
   grid-gap: $sp-0;
-  grid-template-columns: 5% 1fr 5%;
+  grid-template-columns: repeat(3, 1fr);
   grid-template-areas:
     "sidebar video-content .";
 }
@@ -20,7 +20,7 @@
   @include text($font-secondary, $font-sm, bold)
 	writing-mode: vertical-rl;
   @include flex-center;
-	height: 80%;
+	height: 75%;
 	flex-direction: row;
 	position: relative;
 	a {
@@ -99,6 +99,12 @@
     width: $w-90;
     padding: $sp-0;
     margin-bottom: $sp-0;
+    li {
+      padding: $sp-lg;
+      iframe {
+        box-shadow: 5px 5px 5px clr(key);
+      }
+    }
   }
 }
 
@@ -120,6 +126,7 @@
   iframe {
     max-width: $w-100;
     max-height: $w-100;
+    box-shadow: 5px 5px 5px clr(key);
   }
 }
 
@@ -129,5 +136,11 @@
   ul {
     width: $w-90;
     padding: $sp-0;
+    li {
+      padding: $sp-lg;
+      iframe {
+        box-shadow: 5px 5px 5px clr(key);
+      }
+    }
   }
 }

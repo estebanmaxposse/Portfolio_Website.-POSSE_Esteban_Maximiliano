@@ -17,8 +17,8 @@
   grid-template-rows: 1fr 1fr 2fr;
   grid-template-areas:
     "greetings greetings . . photo1 "
-    ". paragraph-mid paragraph-mid . photo1 "
-    ". . paragraph-right paragraph-right photo1 ";
+    ". . paragraph-mid paragraph-mid photo1 "
+    ". paragraph-right paragraph-right paragraph-right photo1 ";
   grid-gap: $sp-lg;
   justify-items: center;
   align-items: center;
@@ -35,12 +35,18 @@
 
 .paragraph-mid {
   grid-area: paragraph-mid;
-  text-align: left;
+  text-align: right;
+  p {
+    text-shadow: 5px 5px 4px clr(key);
+  }
 }
 
 .paragraph-right {
   grid-area: paragraph-right;
   text-align: right;
+  p {
+    text-shadow: 5px 5px 4px clr(key);
+  }
 }
 
 .photo1 {
@@ -211,11 +217,17 @@
 .right-review {
   text-align: right;
   width: $w-50;
+  p {
+    text-shadow: 5px 5px 4px clr(key);
+  }
 }
 
 .left-review {
   text-align: left;
   width: $w-50;
+  p {
+    text-shadow: 5px 5px 4px clr(key);
+  }
 }
 
 .review-name {
