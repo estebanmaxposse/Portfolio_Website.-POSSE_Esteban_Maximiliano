@@ -16,6 +16,7 @@
   .main-page {
     flex-direction: column-reverse;
     margin: $sp-lg;
+    width: 100%;
   }
 
   #menu {
@@ -47,12 +48,29 @@
     }
   }
 
+  .mobile-button {
+    @include border (5px, clr(secondary), 4px); overflow: hidden;
+    margin: 18px auto;
+    padding: 28px;
+    div {
+      &:before {
+        @include text($font-secondary, $font-md, bold)
+        padding: 12px 0;
+      }
+      &:after {
+        @include text($font-secondary, $font-md, bold)
+        padding: 12px 0;
+      }
+    }
+  }
+
   .work-video {
   	iframe {
   		width: 560px;
   		height: 315px;
   	}
   }
+
 
   iframe {
   	width: 560px;
@@ -131,6 +149,10 @@
 
   .photo1 {
     width: 80%;
+  }
+
+  .paragraph-mid {
+    text-align: left;
   }
 
   .paragraph-right {

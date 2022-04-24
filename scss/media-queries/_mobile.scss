@@ -16,6 +16,7 @@
   .main-page {
     flex-direction: column-reverse;
     margin: $sp-lg;
+    width: 100%;
   }
 
   .navbar {
@@ -64,7 +65,10 @@
   }
 
   .working {
-    font-size: 1em;
+    font-size: $font-sm;
+    p {
+      font-size: 1.2rem;
+    }
   }
 
   .role, .display-2 {
@@ -327,5 +331,15 @@
       width: 208px;
       height: 117px;
     }
+  }
+
+  .working {
+    p {
+      font-size: $font-sm;
+    }
+  }
+
+  .role, .display-2 {
+    font-size: 1.7rem;
   }
 }

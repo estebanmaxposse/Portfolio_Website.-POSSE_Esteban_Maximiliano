@@ -293,6 +293,124 @@ span {
   background-color: white;
   padding: 10px; }
 
+.mobile-button-container {
+  width: 100%; }
+
+.mobile-button {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 16px;
+  margin: 12px auto;
+  margin-top: 0;
+  border: 0;
+  border: 3px solid white;
+  border-radius: 4px;
+  overflow: hidden; }
+  .mobile-button:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: scale(1);
+    background-size: cover;
+    transition: 0.3s ease transform;
+    z-index: 1; }
+  .mobile-button:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.16;
+    z-index: 2; }
+  .mobile-button div {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 3; }
+    .mobile-button div:before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      color: white;
+      font-family: "Titillium Web", sans-serif;
+      font-size: 1rem;
+      font-weight: bold;
+      line-height: 1;
+      text-align: center;
+      padding: 8px 0;
+      transition: 0.3s ease all;
+      content: "VIDEO";
+      letter-spacing: 0;
+      opacity: 1;
+      transform: scale(1); }
+    .mobile-button div:after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      color: white;
+      font-family: "Titillium Web", sans-serif;
+      font-size: 1rem;
+      font-weight: bold;
+      line-height: 1;
+      text-align: center;
+      padding: 8px 0;
+      transition: 0.3s ease all;
+      content: "VIDEO";
+      transform: scale(0);
+      opacity: 0; }
+  .mobile-button:hover:before {
+    transform: scale(1.3); }
+  .mobile-button:hover div:before {
+    letter-spacing: 3px;
+    opacity: 0;
+    transform: scale(4); }
+  .mobile-button:hover div:after {
+    letter-spacing: 0;
+    opacity: 1;
+    transform: scale(1); }
+
+#video-button {
+  animation-delay: 1.5s; }
+  #video-button:before {
+    background-image: url(https://i.imgur.com/iRcJvSF.png); }
+
+#sound-button {
+  animation-delay: 1.7s; }
+  #sound-button:before {
+    background-image: url(https://i.imgur.com/9wl1kfZ.png); }
+  #sound-button div:before {
+    content: "SOUND"; }
+  #sound-button div:after {
+    content: "SOUND"; }
+
+#aboutme-button {
+  animation-delay: 1.9s; }
+  #aboutme-button:before {
+    background-image: url(https://i.imgur.com/cQmOjUR.png); }
+  #aboutme-button div:before {
+    content: "ABOUT ME"; }
+  #aboutme-button div:after {
+    content: "ABOUT ME"; }
+
+#contact-button {
+  animation-delay: 2.1s; }
+  #contact-button:before {
+    background-image: url(https://i.imgur.com/fxffKxJ.png); }
+  #contact-button div:before {
+    content: "CONTACT"; }
+  #contact-button div:after {
+    content: "CONTACT"; }
+
 .video-wrapper {
   width: 100%;
   display: grid;
@@ -491,7 +609,7 @@ audio {
   display: grid;
   grid-template-columns: repeat(4, 1fr) 3fr;
   grid-template-rows: 1fr 1fr 2fr;
-  grid-template-areas: "greetings greetings . . photo1 " ". paragraph-mid paragraph-mid . photo1 " ". . paragraph-right paragraph-right photo1 ";
+  grid-template-areas: "greetings greetings . . photo1 " ". . paragraph-mid paragraph-mid photo1 " ". paragraph-right paragraph-right paragraph-right photo1 ";
   grid-gap: 16px;
   justify-items: center;
   align-items: center; }
@@ -507,11 +625,15 @@ audio {
 
 .paragraph-mid {
   grid-area: paragraph-mid;
-  text-align: left; }
+  text-align: right; }
+  .paragraph-mid p {
+    text-shadow: 5px 5px 4px black; }
 
 .paragraph-right {
   grid-area: paragraph-right;
   text-align: right; }
+  .paragraph-right p {
+    text-shadow: 5px 5px 4px black; }
 
 .photo1 {
   grid-area: photo1;
@@ -647,10 +769,14 @@ audio {
 .right-review {
   text-align: right;
   width: 50%; }
+  .right-review p {
+    text-shadow: 5px 5px 4px black; }
 
 .left-review {
   text-align: left;
   width: 50%; }
+  .left-review p {
+    text-shadow: 5px 5px 4px black; }
 
 .review-name {
   text-align: right;
@@ -787,7 +913,8 @@ select {
     align-self: start; }
   .main-page {
     flex-direction: column-reverse;
-    margin: 16px; }
+    margin: 16px;
+    width: 100%; }
   .navbar {
     padding-top: 2%;
     padding-bottom: 2%; }
@@ -813,7 +940,9 @@ select {
   #mail2 {
     display: block; }
   .working {
-    font-size: 1em; }
+    font-size: 1rem; }
+    .working p {
+      font-size: 1.2rem; }
   .role, .display-2 {
     font-size: 2rem;
     margin: 0; }
@@ -968,7 +1097,11 @@ select {
     margin: 0; }
   .work-video iframe {
     width: 208px;
-    height: 117px; } }
+    height: 117px; }
+  .working p {
+    font-size: 1rem; }
+  .role, .display-2 {
+    font-size: 1.7rem; } }
 
 @media (min-device-width: 683px) and (max-device-width: 1023px) {
   .header {
@@ -980,7 +1113,8 @@ select {
     align-self: end; }
   .main-page {
     flex-direction: column-reverse;
-    margin: 16px; }
+    margin: 16px;
+    width: 100%; }
   #menu {
     padding: 0;
     align-items: flex-end; }
@@ -999,6 +1133,22 @@ select {
       margin: 16px; }
       .role ul li {
         text-align: center; }
+  .mobile-button {
+    border: 5px solid white;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 18px auto;
+    padding: 28px; }
+    .mobile-button div:before {
+      font-family: "Titillium Web", sans-serif;
+      font-size: 2rem;
+      font-weight: bold;
+      padding: 12px 0; }
+    .mobile-button div:after {
+      font-family: "Titillium Web", sans-serif;
+      font-size: 2rem;
+      font-weight: bold;
+      padding: 12px 0; }
   .work-video iframe {
     width: 560px;
     height: 315px; }
@@ -1048,6 +1198,8 @@ select {
     font-size: 3rem; }
   .photo1 {
     width: 80%; }
+  .paragraph-mid {
+    text-align: left; }
   .paragraph-right {
     text-align: left; }
   .reviews-grid img {
@@ -1099,6 +1251,8 @@ select {
     flex-grow: 0; }
   .offcanvas-end {
     width: auto; }
+  .mobile-button-container {
+    display: none; }
   .drawer-social {
     display: none; }
   .mail-container {

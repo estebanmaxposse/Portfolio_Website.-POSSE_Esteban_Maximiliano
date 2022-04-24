@@ -73,3 +73,150 @@
   background-color: clr(secondary);
   padding: 10px;
 }
+
+.mobile-button-container {
+  width: 100%;
+}
+
+// mobile-only buttons
+
+.mobile-button {
+	position: relative;
+	display: block;
+	width: 100%;
+	padding: $sp-lg;
+	margin: 12px auto;
+  margin-top: 0;
+	border: 0;
+	@include border (3px, clr(secondary), 4px); overflow: hidden;
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		transform: scale(1);
+		background-size: cover;
+		transition: 0.3s ease transform;
+		z-index: 1;
+	}
+	&:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-color: clr(key);
+		opacity: 0.16;
+		z-index: 2;
+	}
+	div {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 3;
+		&:before {
+			position: absolute;
+			top: 0;
+			right: 0;
+			left: 0;
+			color: clr(secondary);
+			@include text($font-secondary, $font-sm, bold)
+      line-height: 1;
+			text-align: center;
+			padding: 8px 0;
+			transition: 0.3s ease all;
+			content: "VIDEO";
+			letter-spacing: 0;
+			opacity: 1;
+			transform: scale(1);
+		}
+		&:after {
+			position: absolute;
+			top: 0;
+			right: 0;
+			left: 0;
+			color: clr(secondary);
+			@include text($font-secondary, $font-sm, bold) line-height: 1;
+			text-align: center;
+			padding: 8px 0;
+			transition: 0.3s ease all;
+			content: "VIDEO";
+			transform: scale(0);
+			opacity: 0;
+		}
+	}
+	&:hover {
+		&:before {
+			transform: scale(1.3);
+		}
+		div {
+			&:before {
+				letter-spacing: 3px;
+				opacity: 0;
+				transform: scale(4);
+			}
+			&:after {
+				letter-spacing: 0;
+				opacity: 1;
+				transform: scale(1);
+			}
+		}
+	}
+}
+
+#video-button {
+  animation-delay: 1.5s;
+  &:before {
+    background-image: url(https://i.imgur.com/iRcJvSF.png);
+  }
+}
+
+#sound-button {
+  animation-delay: 1.7s;
+  &:before {
+    background-image: url(https://i.imgur.com/9wl1kfZ.png);
+  }
+  div {
+    &:before{
+      content: "SOUND";
+    }
+    &:after {
+      content: "SOUND";
+    }
+  }
+}
+
+#aboutme-button {
+  animation-delay: 1.9s;
+  &:before {
+    background-image: url(https://i.imgur.com/cQmOjUR.png);
+  }
+  div {
+    &:before{
+      content: "ABOUT ME";
+    }
+    &:after {
+      content: "ABOUT ME";
+    }
+  }
+}
+
+#contact-button {
+  animation-delay: 2.1s;
+  &:before {
+    background-image: url(https://i.imgur.com/fxffKxJ.png);
+  }
+  div {
+    &:before{
+      content: "CONTACT";
+    }
+    &:after {
+      content: "CONTACT";
+    }
+  }
+}
