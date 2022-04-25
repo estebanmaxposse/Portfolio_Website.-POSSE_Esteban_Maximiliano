@@ -694,31 +694,6 @@ audio {
 .slick-slide.dragging img {
   pointer-events: none; }
 
-.slick-arrow {
-  position: absolute;
-  top: 50%;
-  background: url(https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/arrow.svg?sanitize=true) center no-repeat;
-  color: white;
-  filter: invert(77%) sepia(32%) saturate(1%) hue-rotate(344deg) brightness(105%) contrast(103%);
-  border: none;
-  width: 2rem;
-  height: 1.5rem;
-  text-indent: -10000px;
-  margin-top: -16px;
-  z-index: 99; }
-
-.slick-arrow.slick-next {
-  right: -40px;
-  transform: rotate(180deg); }
-
-.slick-arrow.slick-prev {
-  left: -40px; }
-
-@media (max-width: 768px) {
-  .slick-arrow {
-    width: 1rem;
-    height: 1rem; } }
-
 .row {
   overflow: hidden;
   max-width: 100%; }
@@ -782,6 +757,9 @@ audio {
   text-align: right;
   font-style: italic;
   margin: 0; }
+
+.review-stars {
+  width: 30%; }
 
 .call-to-action {
   grid-area: call-to-action; }
@@ -929,16 +907,19 @@ select {
   .navbar-expand-lg > .container-fluid {
     padding-right: var(--bs-gutter-x, 0.75rem);
     padding-left: var(--bs-gutter-x, 0.75rem); }
+  #mail {
+    display: none; }
+  #mail2 {
+    display: block; }
+  #aboutme-navbar {
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem); }
   iframe {
     width: 280px;
     height: 157px; }
   .work-video iframe {
     width: 240px;
     height: 135px; }
-  #mail {
-    display: none; }
-  #mail2 {
-    display: block; }
   .working {
     font-size: 1rem; }
     .working p {
@@ -958,9 +939,6 @@ select {
         padding: 16px; }
         .footer footer ul li {
           padding: 8px; }
-  #aboutme-navbar {
-    padding-right: var(--bs-gutter-x, 0.75rem);
-    padding-left: var(--bs-gutter-x, 0.75rem); }
   .video-wrapper {
     grid-template-columns: auto;
     grid-template-rows: auto;
@@ -1058,9 +1036,9 @@ select {
   .client-item {
     border-top: 1px solid white;
     border-bottom: 1px solid white; }
-  #mrb-logo {
+  .mrb-logo {
     border-top: none; }
-  #fanes-logo {
+  .fanes-logo {
     border-bottom: none; }
   .reviews-grid div {
     margin: 8px; }
@@ -1109,12 +1087,6 @@ select {
   .navbar {
     padding-top: 2%;
     padding-bottom: 2%; }
-  .footer {
-    align-self: end; }
-  .main-page {
-    flex-direction: column-reverse;
-    margin: 16px;
-    width: 100%; }
   #menu {
     padding: 0;
     align-items: flex-end; }
@@ -1125,6 +1097,12 @@ select {
     padding-left: var(--bs-gutter-x, 0.75rem); }
   .offcanvas-header {
     padding: 1rem; }
+  .footer {
+    align-self: end; }
+  .main-page {
+    flex-direction: column-reverse;
+    margin: 16px;
+    width: 100%; }
   .role {
     font-size: 4rem;
     margin: 0; }
