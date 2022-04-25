@@ -9,6 +9,7 @@
     font-size: 1.3rem;
   }
 
+  // header
   .header {
     align-self: start;
   }
@@ -44,6 +45,20 @@
     padding-left: var(--bs-gutter-x,.75rem);
   }
 
+  #mail {
+    display: none;
+  }
+
+  #mail2 {
+    display: block;
+  }
+
+  #aboutme-navbar {
+    padding-right: var(--bs-gutter-x,.75rem);
+    padding-left: var(--bs-gutter-x,.75rem);
+  }
+
+  // index
   iframe {
     width: 280px;
     height: 157px;
@@ -54,14 +69,6 @@
   		width: 240px;
   		height: 135px;
   	}
-  }
-
-  #mail {
-    display: none;
-  }
-
-  #mail2 {
-    display: block;
   }
 
   .working {
@@ -85,6 +92,7 @@
     }
   }
 
+  // footer
   .footer {
     align-self: end;
     footer {
@@ -98,11 +106,7 @@
     }
   }
 
-  #aboutme-navbar {
-    padding-right: var(--bs-gutter-x,.75rem);
-    padding-left: var(--bs-gutter-x,.75rem);
-  }
-
+  // video-page
   .video-wrapper {
     grid-template-columns: auto;
     grid-template-rows: auto;
@@ -165,6 +169,7 @@
     }
   }
 
+  // sound-page
   .sound-grid {
     width: $w-90;
     grid-template-columns: 90vw;
@@ -203,11 +208,12 @@
     grid-area: auto;
   }
 
+  // about-me-page
   .story {
     padding: $sp-lg;
     grid-template-columns: 90vw;
     grid-template-rows: auto auto auto auto;
-    grid-template-areas: "greetings""paragraph-mid""photo1""paragraph-right";
+    grid-template-areas: "greetings""story-paragraph-1""photo1""story-paragraph-2";
     grid-gap: $sp-md;
     justify-items: center;
     align-items: center;
@@ -292,6 +298,7 @@
     font-size: $font-md;
   }
 
+  // contact-page
   .button {
     width: auto;
   }
@@ -305,6 +312,7 @@
     padding: $sp-md;
   }
 
+  // 404-page
   .error-flex {
     flex-direction: column;
   }
