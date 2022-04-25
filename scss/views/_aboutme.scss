@@ -17,8 +17,8 @@
   grid-template-rows: 1fr 1fr 2fr;
   grid-template-areas:
     "greetings greetings . . photo1 "
-    ". . paragraph-mid paragraph-mid photo1 "
-    ". paragraph-right paragraph-right paragraph-right photo1 ";
+    ". . story-paragraph-1 story-paragraph-1 photo1 "
+    ". story-paragraph-2 story-paragraph-2 story-paragraph-2 photo1 ";
   grid-gap: $sp-lg;
   justify-items: center;
   align-items: center;
@@ -33,16 +33,16 @@
   }
 }
 
-.paragraph-mid {
-  grid-area: paragraph-mid;
+.story-paragraph-1 {
+  grid-area: story-paragraph-1;
   text-align: right;
   p {
     text-shadow: 5px 5px 4px clr(key);
   }
 }
 
-.paragraph-right {
-  grid-area: paragraph-right;
+.story-paragraph-2 {
+  grid-area: story-paragraph-2;
   text-align: right;
   p {
     text-shadow: 5px 5px 4px clr(key);
@@ -129,36 +129,6 @@
 	img {
 		pointer-events: none;
 	}
-}
-
-.slick-arrow {
-  position: absolute;
-  top: 50%;
-  background: url(https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/arrow.svg?sanitize=true) center no-repeat;
-  color: clr(secondary);
-  filter: invert(77%) sepia(32%) saturate(1%) hue-rotate(344deg) brightness(105%) contrast(103%);
-  border: none;
-  width: 2rem;
-  height: 1.5rem;
-  text-indent: -10000px;
-  margin-top: -16px;
-  z-index: 99;
-}
-
-.slick-arrow.slick-next {
-  right: -40px;
-  transform: rotate(180deg);
-}
-
-.slick-arrow.slick-prev {
-  left: -40px;
-}
-
-@media (max-width: 768px) {
-  .slick-arrow {
-    width: 1rem;
-    height: 1rem;
-  }
 }
 
 .row {
