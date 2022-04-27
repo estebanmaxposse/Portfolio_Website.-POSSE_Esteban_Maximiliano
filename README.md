@@ -6,9 +6,11 @@ I've started coding this page for an online course at CoderHouse, and now it's t
 
 Here you can check out the page uploaded to a free hosting server.
 
-Web en servidor: https://eposse-portfolio.000webhostapp.com/
+https://eposse-portfolio.000webhostapp.com/
 
-Wireframe here: https://drive.google.com/file/d/126_FMq_hAb0xaVprApuMuqjQALBGw7bv/view?usp=sharing
+Wireframe here: 
+
+https://drive.google.com/file/d/126_FMq_hAb0xaVprApuMuqjQALBGw7bv/view?usp=sharing
 
 SEO doc can be found here:
 
