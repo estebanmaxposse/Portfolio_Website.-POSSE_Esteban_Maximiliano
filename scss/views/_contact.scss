@@ -23,7 +23,7 @@ form {
 }
 
 input, select, textarea {
-  @include text($font-secondary, $font-sm, normal)
+  @include text($font-secondary, $font-sm, normal);
   @include border (1px, clr(gray), 2px);
   margin: 0.5%;
   background-color: clr(key);
@@ -36,7 +36,7 @@ input, select, textarea {
 }
 
 label {
-  @include text($font-secondary, $font-sm, normal)
+  @include text($font-secondary, $font-sm, normal);
   color: clr(gray);
   text-transform: uppercase;
   font-style: italic;

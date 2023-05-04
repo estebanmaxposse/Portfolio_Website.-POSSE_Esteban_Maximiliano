@@ -29,7 +29,7 @@ audio {
 }
 
 .sound-subtitle {
-  @include text($font-secondary, $font-sm, normal)
+  @include text($font-secondary, $font-sm, normal);
   color: clr(key);
   text-transform: uppercase;
   margin: $sp-sm;

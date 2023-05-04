@@ -63,12 +63,12 @@ li {
 h1 {
   margin: $sp-lg;
   margin-left: 32px;
-  @include text($font-secondary, $font-lg, bold)
+  @include text($font-secondary, $font-lg, bold);
   color: clr(secondary)
 }
 
 h2 {
-  @include text($font-secondary, $font-md, bold)
+  @include text($font-secondary, $font-md, bold);
   color: clr(secondary);
   padding: 1.5em;
   padding-left: 3em;
@@ -76,6 +76,6 @@ h2 {
 }
 
 span {
-  @include text($font-secondary, $font-sm, normal)
+  @include text($font-secondary, $font-sm, normal);
   color: clr(secondary);
 }

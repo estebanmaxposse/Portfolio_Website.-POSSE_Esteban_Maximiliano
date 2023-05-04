@@ -55,7 +55,7 @@ nav {
 }
 
 #main-title {
-  @include text($font-secondary, $font-sm, bold)
+  @include text($font-secondary, $font-sm, bold);
   color: clr(secondary);
   margin-left: $sp-lg;
 }
@@ -101,7 +101,7 @@ nav {
 }
 
 #menu {
-  @include text($font-secondary, $font-sm, bold)
+  @include text($font-secondary, $font-sm, bold);
   margin: $sp-0;
   display: flex;
   li {
