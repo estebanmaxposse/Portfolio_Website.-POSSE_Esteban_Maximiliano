@@ -8,7 +8,7 @@
 }
 
 .story {
-  @include text($font-secondary, $font-sm, normal)
+  @include text($font-secondary, $font-sm, normal);
   color: clr(secondary);
   padding: 30px;
   grid-area: story;
@@ -27,7 +27,7 @@
 .greetings {
   grid-area: greetings;
   h1 {
-    @include text($font-secondary, $font-xl, bold)
+    @include text($font-secondary, $font-xl, bold);
     margin: $sp-0;
     text-align: center;
   }
@@ -74,7 +74,7 @@
 }
 
 .logo-carousel {
-  @include text($font-secondary, $font-sm, normal)
+  @include text($font-secondary, $font-sm, normal);
   overflow: inherit;
   border: none;
   color: clr(secondary);
@@ -143,7 +143,7 @@
 }
 
 .client-item {
-  @include text($font-secondary, $font-sm, normal)
+  @include text($font-secondary, $font-sm, normal);
   color: clr(secondary);
   text-align: center;
   a {
@@ -163,7 +163,7 @@
 }
 
 .reviews-grid {
-  @include text($font-secondary, $font-sm, normal)
+  @include text($font-secondary, $font-sm, normal);
   display: grid;
   grid-template-columns: 1fr;
   color: clr(secondary);
@@ -215,7 +215,7 @@
 }
 
 .create {
-  @include text($font-secondary, $font-lg, bold)
+  @include text($font-secondary, $font-lg, bold);
   color: clr(secondary);
   width: $w-90;
   margin: auto;

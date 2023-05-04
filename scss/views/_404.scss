@@ -1,7 +1,7 @@
 .error-message {
   margin-left: 32px;
   padding: $sp-lg;
-  @include text($font-secondary, $font-sm, normal)
+  @include text($font-secondary, $font-sm, normal);
   color: clr(secondary);
 }
 

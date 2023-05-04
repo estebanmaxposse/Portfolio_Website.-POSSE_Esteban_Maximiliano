@@ -57,11 +57,11 @@
     padding: 28px;
     div {
       &:before {
-        @include text($font-secondary, $font-md, bold)
+        @include text($font-secondary, $font-md, bold);
         padding: 12px 0;
       }
       &:after {
-        @include text($font-secondary, $font-md, bold)
+        @include text($font-secondary, $font-md, bold);
         padding: 12px 0;
       }
     }
